@@ -1,0 +1,12 @@
+[
+  {
+    "view": "front",
+    "seconds": 2.19,
+    "file": "renders/rain-foundation-front.png"
+  },
+  {
+    "view": "rear",
+    "seconds": 1.96,
+    "file": "renders/rain-foundation-rear.png"
+  }
+]

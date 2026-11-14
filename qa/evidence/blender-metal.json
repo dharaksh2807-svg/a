@@ -1,0 +1,26 @@
+{
+  "blender": "5.2.3 LTS",
+  "python": "3.13.13 (main, Apr 25 2025, 12:39:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "tests": {
+    "cycles_metal_render": {
+      "pass": true,
+      "seconds": 0.577,
+      "result": {
+        "path": "renders/environment-cycles-GPU.png",
+        "bytes": 46506
+      }
+    }
+  },
+  "engine_probe": "metal",
+  "cycles_devices": [
+    {
+      "name": "Apple M5",
+      "type": "CPU"
+    },
+    {
+      "name": "Apple M5 (GPU - 10 cores)",
+      "type": "METAL"
+    }
+  ]
+}

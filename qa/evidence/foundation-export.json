@@ -1,0 +1,8 @@
+{
+  "meshes": 16,
+  "triangles": 76974,
+  "rigged": false,
+  "materials": "single neutral clay; textures intentionally not evaluated",
+  "source": "Official Rain v3 page; archive Rain v3.3; rain_v3.2.blend",
+  "license": "CC-BY-4.0"
+}

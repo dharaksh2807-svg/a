@@ -1,0 +1,12 @@
+{
+  "name": "nyra-character-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "viewer": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "validate": "node scripts/validate_glb.mjs"
+  },
+  "dependencies": {"three": "0.187.0"},
+  "devDependencies": {"gltf-validator": "2.0.0-dev.3.10"}
+}

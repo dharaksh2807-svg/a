@@ -1,0 +1,11 @@
+00:00.243  blend            | Read blend: "/Users/dharaksh/Desktop/a/source/upstream/Rain v3.3/rain_v3.2.blend"
+/Users/dharaksh/Desktop/a/scripts/render_foundation.py:19: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+00:02.683  render           | Saved: '/Users/dharaksh/Desktop/a/renders/rain-foundation-front.png'
+00:04.646  render           | Saved: '/Users/dharaksh/Desktop/a/renders/rain-foundation-rear.png'
+VERDICT: PASS
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+scripts disabled for "/Users/dharaksh/Desktop/a/source/upstream/Rain v3.3/rain_v3.2.blend", skipping 'cloudrig.py'
+scripts disabled for "/Users/dharaksh/Desktop/a/source/upstream/Rain v3.3/rain_v3.2.blend", skipping 'rain_shading.py'
+
+Blender quit

@@ -1,0 +1,23 @@
+HTTP/2 302
+date: Sat, 14 Nov 2026 21:50:01 GMT
+content-type: text/html; charset=utf-8
+location: https://mirror.freedif.org/blender/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip
+cache-control: no-store, no-cache, must-revalidate
+cache-control: private, no-cache
+expires: 0
+link: <https://mirror.nju.edu.cn/blender/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip>; rel=duplicate; pri=1; geo=cn
+pragma: no-cache
+server: cloudflare
+via: 1.1 Caddy
+cf-cache-status: BYPASS
+x-permitted-cross-domain-policies: none
+cf-ray: a5a93abbc93ab277-BLR
+
+HTTP/2 200
+server: nginx
+date: Sat, 14 Nov 2026 21:50:02 GMT
+content-type: application/zip
+content-length: 50643039
+last-modified: Tue, 20 Jan 2026 14:10:51 GMT
+etag: "696f8ceb-304c05f"
+accept-ranges: bytes

@@ -1,0 +1,14 @@
+{
+  "core": {
+    "exit_code": 0,
+    "status": "pass"
+  },
+  "eevee": {
+    "exit_code": 0,
+    "status": "pass"
+  },
+  "metal": {
+    "exit_code": 0,
+    "status": "pass"
+  }
+}

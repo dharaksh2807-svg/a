@@ -1,0 +1,1641 @@
+{
+  "file": "/Users/dharaksh/Desktop/a/source/upstream/Rain v3.3/rain_v3.2.blend",
+  "blender": "5.2.3 LTS",
+  "file_version": [
+    4,
+    1,
+    23
+  ],
+  "objects": [
+    {
+      "name": "GEO-rain-body",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        1.3965505361557007,
+        0.15125250816345215,
+        1.2616201639175415
+      ],
+      "vertices": 10256,
+      "triangles": 20462,
+      "materials": [
+        "MAT-rain.body"
+      ],
+      "modifiers": [
+        {
+          "name": "mask_arms",
+          "type": "VERTEX_WEIGHT_MIX",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "mask_legs",
+          "type": "VERTEX_WEIGHT_MIX",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 72
+    },
+    {
+      "name": "GEO-rain-body_nomask",
+      "type": "MESH",
+      "hide_render": true,
+      "visible": false,
+      "dimensions": [
+        1.3995082378387451,
+        0.25005242228507996,
+        1.3032289743423462
+      ],
+      "vertices": 10256,
+      "triangles": 20462,
+      "materials": [
+        "MAT-rain.hands",
+        "MAT-rain.body"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 2,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 79
+    },
+    {
+      "name": "GEO-rain-eye_cornea",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.17048348486423492,
+        0.07721129804849625,
+        0.07721173018217087
+      ],
+      "vertices": 642,
+      "triangles": 1280,
+      "materials": [
+        "MAT-rain.cornea"
+      ],
+      "modifiers": [
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 1
+        }
+      ],
+      "shape_keys": 3
+    },
+    {
+      "name": "GEO-rain-eye_dots",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.09664309024810791,
+        2.9802320611338473e-08,
+        0.003000139957293868
+      ],
+      "vertices": 32,
+      "triangles": 30,
+      "materials": [
+        "MAT-rain.eyedot"
+      ],
+      "modifiers": [
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "GEO-rain-eyebrows",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.18121106922626495,
+        0.047092970460653305,
+        0.03061532787978649
+      ],
+      "vertices": 148,
+      "triangles": 260,
+      "materials": [
+        "MAT-rain.eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "GEO-rain-eyelashes",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.17955411970615387,
+        0.0207915510982275,
+        0.023068426176905632
+      ],
+      "vertices": 120,
+      "triangles": 236,
+      "materials": [
+        "MAT-rain.eyelashes"
+      ],
+      "modifiers": [
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 2
+    },
+    {
+      "name": "GEO-rain-eyes",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.1690790355205536,
+        0.07258576899766922,
+        0.07580816000699997
+      ],
+      "vertices": 1418,
+      "triangles": 2756,
+      "materials": [
+        "MAT-rain.eyes"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 1
+        }
+      ],
+      "shape_keys": 7
+    },
+    {
+      "name": "GEO-rain-eyes_viewport",
+      "type": "MESH",
+      "hide_render": true,
+      "visible": false,
+      "dimensions": [
+        0.1701357364654541,
+        0.0784236267209053,
+        0.07687127590179443
+      ],
+      "vertices": 1348,
+      "triangles": 2688,
+      "materials": [
+        "MAT-rain.eyes.viewport_white",
+        "MAT-rain.eyes.viewport_blue",
+        "MAT-rain.eyes.viewport_black"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 1
+        }
+      ],
+      "shape_keys": 6
+    },
+    {
+      "name": "GEO-rain-gums_lower",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.0767565593123436,
+        0.056819427758455276,
+        0.03408026322722435
+      ],
+      "vertices": 1542,
+      "triangles": 2880,
+      "materials": [
+        "MAT-rain.gums",
+        "MAT-rain.teeth"
+      ],
+      "modifiers": [
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 3
+    },
+    {
+      "name": "GEO-rain-gums_upper",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.07709537446498871,
+        0.051630500704050064,
+        0.0354149304330349
+      ],
+      "vertices": 1542,
+      "triangles": 2880,
+      "materials": [
+        "MAT-rain.gums",
+        "MAT-rain.teeth"
+      ],
+      "modifiers": [
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "GEO-rain-hair_main",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.24972906708717346,
+        0.2504327595233917,
+        0.2658660113811493
+      ],
+      "vertices": 2204,
+      "triangles": 3933,
+      "materials": [
+        "MAT-rain.hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 2
+    },
+    {
+      "name": "GEO-rain-hair_ponytail",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.10079927742481232,
+        0.4280976951122284,
+        0.07371913641691208
+      ],
+      "vertices": 579,
+      "triangles": 1138,
+      "materials": [
+        "MAT-rain.hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "GEO-rain-hair_strand",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.1351650506258011,
+        0.07463361322879791,
+        0.1292008012533188
+      ],
+      "vertices": 400,
+      "triangles": 786,
+      "materials": [
+        "MAT-rain.hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "GEO-rain-hairband",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.051996443420648575,
+        0.03125752881169319,
+        0.04911982640624046
+      ],
+      "vertices": 480,
+      "triangles": 960,
+      "materials": [
+        "MAT-rain.hairband"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "GEO-rain-head",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.27475234866142273,
+        0.26222798228263855,
+        0.34109601378440857
+      ],
+      "vertices": 6395,
+      "triangles": 12634,
+      "materials": [
+        "MAT-rain.body"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 25
+    },
+    {
+      "name": "GEO-rain-jeans",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.33551645278930664,
+        0.19658516347408295,
+        0.808090329170227
+      ],
+      "vertices": 4531,
+      "triangles": 8929,
+      "materials": [
+        "MAT-rain.jeans"
+      ],
+      "modifiers": [
+        {
+          "name": "mask_legs",
+          "type": "VERTEX_WEIGHT_MIX",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 9
+    },
+    {
+      "name": "GEO-rain-scarf",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.16870743036270142,
+        0.2344226837158203,
+        0.2877008616924286
+      ],
+      "vertices": 1285,
+      "triangles": 2434,
+      "materials": [
+        "MAT-rain.scarf"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "GEO-rain-shoes",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.2431851327419281,
+        0.2332235723733902,
+        0.10139205306768417
+      ],
+      "vertices": 6634,
+      "triangles": 12364,
+      "materials": [
+        "MAT-rain.shoes",
+        "MAT-rain.metal",
+        "MAT-rain.socks",
+        "MAT-rain.laces"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 1
+        }
+      ],
+      "shape_keys": 9
+    },
+    {
+      "name": "GEO-rain-tongue",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.06563856452703476,
+        0.09680846333503723,
+        0.034724947065114975
+      ],
+      "vertices": 275,
+      "triangles": 528,
+      "materials": [
+        "MAT-rain.tongue"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Lattice_Head_Main",
+          "type": "LATTICE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 2
+    },
+    {
+      "name": "GEO-rain-top",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        0.30793121457099915,
+        0.20921163260936737,
+        0.46812519431114197
+      ],
+      "vertices": 1632,
+      "triangles": 3112,
+      "materials": [
+        "MAT-rain.top"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY",
+          "levels": null,
+          "render_levels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 2
+        }
+      ],
+      "shape_keys": 17
+    },
+    {
+      "name": "HLP-rain-lattice-head",
+      "type": "LATTICE",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "RIG-rain",
+      "type": "ARMATURE",
+      "hide_render": false,
+      "visible": true,
+      "dimensions": [
+        1.3686401844024658,
+        1.2917031049728394,
+        1.6774910688400269
+      ],
+      "bones": 2166,
+      "deform_bones": 392,
+      "constraints": 2788,
+      "bbone_segment_max": 16
+    },
+    {
+      "name": "WGT-Arrow3D",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.36967289447784424,
+        1.0,
+        0.36967337131500244
+      ],
+      "vertices": 16,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-ArrowHead",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.9491103887557983,
+        1.0,
+        0.9491103887557983
+      ],
+      "vertices": 5,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Capsule_Flat",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.6666174218471497e-08,
+        1.0,
+        0.31586071848869324
+      ],
+      "vertices": 26,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Carpal",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.13954517245292664,
+        1.0,
+        0.0
+      ],
+      "vertices": 34,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Circle",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.0029999995604157448,
+        1.1641532182693481e-10,
+        0.003000000026077032
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Clavicle",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.4470233917236328,
+        0.41702955961227417
+      ],
+      "vertices": 44,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Cogwheel",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.9999999403953552,
+        2.9970870230044966e-08,
+        0.9192770719528198
+      ],
+      "vertices": 36,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Cube",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.9999995231628418,
+        0.9999995827674866,
+        1.0
+      ],
+      "vertices": 8,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Eye_Target",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        7.50079038880358e-08,
+        1.0,
+        0.7732575535774231
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Eyebrow.L",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.38456904888153076,
+        0.0
+      ],
+      "vertices": 22,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Eyebrow.R",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.38456904888153076,
+        0.0
+      ],
+      "vertices": 22,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Eyelid_Lower",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.4194256436894648e-07,
+        0.1477985680103302,
+        1.0
+      ],
+      "vertices": 34,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Eyelid_Upper",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        4.474918569030706e-08,
+        0.24350467324256897,
+        1.0
+      ],
+      "vertices": 34,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Eyes_Target",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        6.459909940303987e-08,
+        0.5090571641921997,
+        1.0
+      ],
+      "vertices": 56,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-FK_Limb",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        2.758110895229038e-08,
+        0.8194518685340881
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-FK_Limb_Offset",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        2.758110895229038e-08,
+        0.8194518685340881
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Foot_Parent.L",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.5065360069274902,
+        1.0034388303756714,
+        0.0010213053319603205
+      ],
+      "vertices": 46,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 1
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Foot_Parent.R",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.5065360069274902,
+        1.0034388303756714,
+        0.0010213053319603205
+      ],
+      "vertices": 46,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "levels": 0,
+          "render_levels": 1
+        }
+      ],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-FootRoll",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        7.330187656862108e-08,
+        1.0,
+        0.9619407057762146
+      ],
+      "vertices": 58,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Hand_IK",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.999361515045166,
+        0.4915996193885803,
+        1.0
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Hemisphere",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.9999998807907104,
+        0.30250537395477295,
+        0.9999997019767761
+      ],
+      "vertices": 26,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Hips",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.9999997615814209,
+        0.45784759521484375,
+        1.0
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Jaw",
+      "type": "MESH",
+      "hide_render": true,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.41881996393203735,
+        0.17896288633346558
+      ],
+      "vertices": 20,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Mouth",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.5702451467514038,
+        2.3026888840149695e-08
+      ],
+      "vertices": 7,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Mouth_Bottom",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.12246400117874146,
+        0.27039027214050293
+      ],
+      "vertices": 8,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Mouth_Top",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.12246403843164444,
+        0.27039027214050293
+      ],
+      "vertices": 8,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-MSTR-Head_Lower",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.4273556172847748,
+        0.0
+      ],
+      "vertices": 15,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-MSTR-Head_Upper",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.8194193840026855,
+        0.0
+      ],
+      "vertices": 17,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Nose_Master",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.1019823631386316e-07,
+        0.2572817802429199,
+        1.0
+      ],
+      "vertices": 33,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Oval",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        2.4835259182509617e-08,
+        0.8333331942558289
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Pole_Line",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.0,
+        1.0,
+        2.8062649448656884e-07
+      ],
+      "vertices": 4,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Roll",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.5000826716423035,
+        0.29028281569480896
+      ],
+      "vertices": 40,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Root",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        3.9381355065870594e-08,
+        1.0
+      ],
+      "vertices": 24,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Sphere",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        1.0,
+        0.9999994039535522
+      ],
+      "vertices": 96,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Square",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        0.9999999403953552,
+        8.21732086819793e-08,
+        1.0
+      ],
+      "vertices": 4,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Torso",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        0.7783900499343872,
+        0.9999998211860657
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-Torso_Master",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        7.705405380420416e-08,
+        1.0
+      ],
+      "vertices": 32,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    },
+    {
+      "name": "WGT-XY_Sphere",
+      "type": "MESH",
+      "hide_render": false,
+      "visible": false,
+      "dimensions": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ],
+      "vertices": 96,
+      "triangles": 0,
+      "materials": [],
+      "modifiers": [],
+      "shape_keys": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "TEX-rain_body_diffuse.1001.png",
+      "path": "//textures/TEX-rain_body_diffuse.<UDIM>.png",
+      "packed": false,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "TEX-rain_body_roughness.1001.png",
+      "path": "//textures/TEX-rain_body_roughness.<UDIM>.png",
+      "packed": false,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "TEX-rain_eyes.png.000",
+      "path": "//textures/TEX-rain_eyes.png",
+      "packed": false,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "TEX-rain_eyes.png.002",
+      "path": "//textures/TEX-rain_eyes.png",
+      "packed": false,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "TEX-rain_hair_diffuse.png",
+      "path": "//textures/TEX-rain_hair_diffuse.png",
+      "packed": false,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "TEX-rain_hair_direction.png",
+      "path": "//textures/TEX-rain_hair_direction.png",
+      "packed": false,
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "TEX-rain_hair_direction_bw.png",
+      "path": "//textures/TEX-rain_hair_direction_bw.png",
+      "packed": false,
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "TEX-rain_hands_diffuse.png",
+      "path": "//textures/TEX-rain_hands_diffuse.png",
+      "packed": false,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "TEX-rain_hands_roughness.png",
+      "path": "//textures/TEX-rain_hands_roughness.png",
+      "packed": false,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "TEX-rain_jeans_diffuse.png",
+      "path": "//textures/TEX-rain_jeans_diffuse.png",
+      "packed": false,
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "TEX-rain_jeans_normal.png",
+      "path": "//textures/TEX-rain_jeans_normal.png",
+      "packed": false,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "TEX-rain_jeans_roughness.png",
+      "path": "//textures/TEX-rain_jeans_roughness.png",
+      "packed": false,
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "TEX-rain_scarf_cavity.png",
+      "path": "//textures/TEX-rain_scarf_cavity.png",
+      "packed": false,
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "TEX-rain_socks_bump.png",
+      "path": "//textures/TEX-rain_socks_bump.png",
+      "packed": false,
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "TEX-rain_socks_roughness.png",
+      "path": "//textures/TEX-rain_socks_roughness.png",
+      "packed": false,
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "TEX-rain_top_bump.png",
+      "path": "//textures/TEX-rain_top_bump.png",
+      "packed": false,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "TEX-rain_top_roughness.png",
+      "path": "//textures/TEX-rain_top_roughness.png",
+      "packed": false,
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "name": "cloudrig.py",
+      "lines": 3136,
+      "use_module": true
+    },
+    {
+      "name": "rain_shading.py",
+      "lines": 14,
+      "use_module": true
+    },
+    {
+      "name": "ReadMe.txt",
+      "lines": 13,
+      "use_module": false
+    }
+  ],
+  "libraries": [],
+  "drivers": 764
+}

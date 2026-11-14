@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NYRA · Character lab</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"../node_modules/three/build/three.module.js","three/addons/":"../node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <header><span class="eyebrow">METRO RUNNER 3D / CHARACTER LAB</span><h1>NYRA<span>Urban Velocity</span></h1><p>Phase 1 · Art direction & foundation evaluation</p></header>
+  <main>
+    <section class="concept"><div class="section-title"><h2>Three directions. One runner.</h2><span>GENERATED CONCEPT ART · NOT 3D OUTPUT</span></div><img src="../references/concepts/runner-concepts.png" alt="Original adult runner concepts: coral and plum NYRA, cobalt and mint SORA, saffron and teal ZURI, each shown from the front and rear"><p><strong>Selected: NYRA.</strong> Coral shoulder panels, plum trackwear and a segmented ponytail. Shorten the ponytail and simplify sneaker details for gameplay.</p></section>
+    <section><div class="section-title"><h2>Foundation inspection</h2><span>REAL BLENDER ASSET</span></div>
+      <p>Rain is the selected editable foundation. These images show the unmodified character with inspection lighting. NYRA’s sculpt, wardrobe and game rig are future production work.</p>
+      <div class="render-pair"><figure><img src="../renders/rain-foundation-front.png" alt="Actual Blender render of original Rain foundation from the front"><figcaption>Front · original Rain</figcaption></figure><figure><img src="../renders/rain-foundation-rear.png" alt="Actual Blender render of original Rain foundation from the rear"><figcaption>Rear · original Rain</figcaption></figure></div>
+      <p class="credit">Rain Rig (CC) Blender Foundation | <a href="https://studio.blender.org/characters/rain/v3/">studio.blender.org</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Inspection renders change lighting, camera and subdivision level.</p>
+    </section>
+    <section><div class="section-title"><h2>GLB inspection bench</h2><span>LOCAL · NO UPLOADS</span></div>
+      <div class="toolbar"><label>Asset <select id="asset"><option value="rain-geometry-study">Rain · static clay geometry study</option><option value="environment-smoke">Environment test cube</option></select></label><label class="file">Open a GLB <input id="file" type="file" accept=".glb"></label><button id="front">Front</button><button id="rear">Rear</button><label><input type="checkbox" id="wire"> Wireframe</label><label><input type="checkbox" id="spin"> Rotate</label><label>Animation <select id="clips" disabled><option>No clips</option></select></label></div>
+      <p id="asset-note">Static Rain geometry with one clay material. No rig, textures or animation. This is not the NYRA character.</p>
+      <div id="stage"><canvas aria-label="Interactive 3D asset viewer"></canvas></div>
+      <p id="status" role="status" aria-live="polite">Loading viewer…</p>
+    </section>
+    <footer><a href="../ART_DIRECTION.md">Art direction</a><a href="../ASSET_RESEARCH.md">Asset research</a><a href="../ENVIRONMENT_AUDIT.md">Environment audit</a><a href="../ASSET_LICENSES.md">Licenses</a></footer>
+  </main>
+  <script type="module" src="viewer.js"></script>
+</body>
+</html>

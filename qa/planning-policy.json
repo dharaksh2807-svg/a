@@ -1,0 +1,22 @@
+{
+  "planning": "compact",
+  "context_depth": "dependency",
+  "verification_depth": "impact",
+  "delegation": "none",
+  "reason_codes": [
+    "standalone-new-project",
+    "environment-unknown",
+    "asset-licensing"
+  ],
+  "allowed_write_scope": [
+    "/Users/dharaksh/Desktop/a"
+  ],
+  "acceptance": [
+    "actual Blender save render export",
+    "three viable foundations compared",
+    "three concepts and selected direction",
+    "source and license provenance",
+    "standalone viewer",
+    "commit and attempt push"
+  ]
+}

@@ -1,0 +1,63 @@
+00:00.285  blend            | Read blend: "/Users/dharaksh/Desktop/a/source/blender/rain/rain_v3.2.blend"
+/Users/dharaksh/Desktop/a/scripts/export_foundation_study.py:15: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  clay.use_nodes=True
+Info: Saved as "rain-geometry-study.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+03:13:35 | INFO: Starting glTF 2.0 export
+03:13:35 | INFO: Extracting primitive: GEO-rain-body.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-eyebrows.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-eyelashes.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-eyes.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-gums_lower.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-gums_upper.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-hair_main.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-hair_ponytail.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-hair_strand.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-hairband.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-head.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-jeans.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-scarf.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-shoes.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-tongue.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Extracting primitive: GEO-rain-top.001
+03:13:35 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+03:13:35 | INFO: Primitives created: 1
+03:13:35 | INFO: Finished glTF 2.0 export in 0.11644172668457031 s
+
+VERDICT: PASS
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+scripts disabled for "/Users/dharaksh/Desktop/a/source/blender/rain/rain_v3.2.blend", skipping 'cloudrig.py'
+scripts disabled for "/Users/dharaksh/Desktop/a/source/blender/rain/rain_v3.2.blend", skipping 'rain_shading.py'
+
+Blender quit

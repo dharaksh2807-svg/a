@@ -1,0 +1,16 @@
+{
+  "blender": "5.2.3 LTS",
+  "python": "3.13.13 (main, Apr 25 2025, 12:39:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "tests": {
+    "eevee_render": {
+      "pass": true,
+      "seconds": 0.63,
+      "result": {
+        "path": "renders/environment-blender_eevee-default.png",
+        "bytes": 41902
+      }
+    }
+  },
+  "engine_probe": "eevee"
+}

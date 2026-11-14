@@ -1,0 +1,68 @@
+{
+  "blender": "5.2.3 LTS",
+  "python": "3.13.13 (main, Apr 25 2025, 12:39:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "tests": {
+    "create_object": {
+      "pass": true,
+      "seconds": 0.0,
+      "result": {
+        "name": "ENVIRONMENT_TEST_CUBE_NOT_CHARACTER",
+        "vertices": 8
+      }
+    },
+    "save_blend": {
+      "pass": true,
+      "seconds": 0.031,
+      "result": {
+        "path": "source/blender/environment-smoke.blend",
+        "bytes": 97124
+      }
+    },
+    "cycles_cpu_render": {
+      "pass": true,
+      "seconds": 0.061,
+      "result": {
+        "path": "renders/environment-cycles-CPU.png",
+        "bytes": 46581
+      }
+    },
+    "cycles_metal_render": {
+      "pass": true,
+      "seconds": 108.865,
+      "result": {
+        "path": "renders/environment-cycles-GPU.png",
+        "bytes": 46577
+      }
+    },
+    "eevee_render": {
+      "pass": true,
+      "seconds": 3.147,
+      "result": {
+        "path": "renders/environment-blender_eevee-default.png",
+        "bytes": 41956
+      }
+    },
+    "export_glb": {
+      "pass": true,
+      "seconds": 0.099,
+      "result": {
+        "path": "exports/environment-smoke.glb",
+        "bytes": 1976
+      }
+    }
+  },
+  "engines": [
+    "BLENDER_EEVEE"
+  ],
+  "cycles_devices": [
+    {
+      "name": "Apple M5",
+      "type": "CPU"
+    },
+    {
+      "name": "Apple M5 (GPU - 10 cores)",
+      "type": "METAL"
+    }
+  ]
+}

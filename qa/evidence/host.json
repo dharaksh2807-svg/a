@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-11-15T03:13:56.018473+05:30",
+  "execution_host": "local desktop, not cloud",
+  "architecture": "arm64",
+  "os": {
+    "exit_code": 0,
+    "output": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.2\nBuildVersion:\t\t25F84"
+  },
+  "cpu": {
+    "exit_code": 0,
+    "output": "Apple M5"
+  },
+  "memory_bytes": {
+    "exit_code": 0,
+    "output": "17179869184"
+  },
+  "logical_cpus": {
+    "exit_code": 0,
+    "output": "10"
+  },
+  "graphics": {
+    "exit_code": 0,
+    "output": "Graphics/Displays:\n\n    Apple M5:\n\n      Chipset Model: Apple M5\n      Type: GPU\n      Bus: Built-In\n      Total Number of Cores: 10\n      Vendor: Apple (0x106b)\n      Metal Support: Metal 4\n      Displays:\n        Color LCD:\n          Display Type: Built-in Liquid Retina Display\n          Resolution: 2560 x 1664 Retina\n          Main Display: Yes\n          Mirror: Off\n          Online: Yes\n          Automatically Adjust Brightness: Yes\n          Connection Type: Internal"
+  },
+  "python": {
+    "exit_code": 0,
+    "output": "Python 3.14.7"
+  },
+  "git": {
+    "exit_code": 0,
+    "output": "git version 2.55.0"
+  },
+  "node": {
+    "exit_code": 0,
+    "output": "v24.18.0"
+  },
+  "npm": {
+    "exit_code": 0,
+    "output": "11.16.0"
+  },
+  "ffmpeg": {
+    "exit_code": 0,
+    "output": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers"
+  }
+}
