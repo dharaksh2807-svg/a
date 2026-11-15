@@ -1,5 +1,11 @@
 # NYRA — Urban Velocity
 
+## Candidate A reconstruction
+
+The locked Candidate A base was rebuilt into an editable Blender master with separate facial geometry, hair, outfit, footwear and accessories. The studio renders are ready for independent review. Facial likeness and finish remain below the approved concept.
+
+[Reconstruction gallery](recovery/nyra/reconstruction/index.html) · [Packed Blender master](recovery/nyra/reconstruction/NYRA_Candidate_A_Reconstructed.blend) · [Assessment](recovery/nyra/reconstruction/REPORT.md)
+
 ## Phase 3 replacement review
 
 Two independent local Pixal3D front/back candidates, packed Blender scenes, 24 actual renders and an old/A/B comparison viewer are preserved. **Both candidates failed the visual quality gate**: malformed torso surfaces, poor faces, rough hair and distorted shoes remain. Pixel Match comparisons are retained but introduce projection artifacts. No rigging, animation or game integration began.

@@ -1,0 +1,169 @@
+{
+  "source_hashes_preserved": {
+    "nyra-a.glb": "862f8105ecb861efc3d959dc81762c4fc6c5ee0016052795bb42d262d60c0f5d",
+    "renders/original/nyra-review.blend": "f14150d876a8ea595316f65db7ab7fe8c090b1b3c27440ceeec99fbc7e11393a"
+  },
+  "packed_images": {
+    "eye-brown-pigment": [
+      512,
+      512
+    ],
+    "face-albedo-baked": [
+      2048,
+      1024
+    ],
+    "hair-fibers": [
+      64,
+      256
+    ],
+    "Image_0": [
+      4096,
+      4096
+    ],
+    "Image_1": [
+      4096,
+      4096
+    ],
+    "technical-knit-normal": [
+      512,
+      512
+    ]
+  },
+  "floor_z_m": 0.0008500000112690032,
+  "traction_lug_clearance_mm": [
+    0.15,
+    0.15,
+    0.15,
+    0.15,
+    0.15,
+    0.15,
+    0.15,
+    0.15,
+    0.15,
+    0.15
+  ],
+  "render_cameras": [
+    "Camera | clay",
+    "Camera | face",
+    "Camera | face-three-quarter",
+    "Camera | front",
+    "Camera | gameplay",
+    "Camera | rear",
+    "Camera | selection",
+    "Camera | side",
+    "Camera | three-quarter",
+    "Review camera"
+  ],
+  "working_surfaces": [
+    {
+      "object": "Torso and neck | independent skin",
+      "evaluated": true,
+      "vertices": 103536,
+      "faces": 103534,
+      "uv_layers": 1,
+      "boundary_edges": 0,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Face | rebuilt orbital loops and sculpted planes",
+      "evaluated": true,
+      "vertices": 25912,
+      "faces": 25648,
+      "uv_layers": 1,
+      "boundary_edges": 152,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Candidate A fitted leggings | stitched leg and pelvis loops",
+      "evaluated": true,
+      "vertices": 18919,
+      "faces": 18800,
+      "uv_layers": 1,
+      "boundary_edges": 240,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Ponytail | primary core",
+      "evaluated": true,
+      "vertices": 2788,
+      "faces": 2756,
+      "uv_layers": 1,
+      "boundary_edges": 0,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Black athletic crop top | independent shell",
+      "evaluated": true,
+      "vertices": 12384,
+      "faces": 12384,
+      "uv_layers": 1,
+      "boundary_edges": 0,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Dropped cropped jacket back | separate shell",
+      "evaluated": true,
+      "vertices": 8184,
+      "faces": 8182,
+      "uv_layers": 1,
+      "boundary_edges": 0,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Runner mesh upper -1",
+      "evaluated": true,
+      "vertices": 4992,
+      "faces": 4898,
+      "uv_layers": 1,
+      "boundary_edges": 0,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Runner mesh upper 1",
+      "evaluated": true,
+      "vertices": 4992,
+      "faces": 4898,
+      "uv_layers": 1,
+      "boundary_edges": 0,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Layered rubber and EVA sole -1",
+      "evaluated": true,
+      "vertices": 768,
+      "faces": 674,
+      "uv_layers": 1,
+      "boundary_edges": 0,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    },
+    {
+      "object": "Layered rubber and EVA sole 1",
+      "evaluated": true,
+      "vertices": 768,
+      "faces": 674,
+      "uv_layers": 1,
+      "boundary_edges": 0,
+      "edges_shared_by_more_than_two_faces": 0,
+      "loose_vertices": 0,
+      "zero_area_faces": 0
+    }
+  ]
+}

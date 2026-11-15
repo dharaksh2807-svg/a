@@ -1,0 +1,38 @@
+[
+  {
+    "collection": "01 | Candidate A anatomy and fitted surfaces",
+    "objects": 14,
+    "vertices": 106818,
+    "triangles": 213580
+  },
+  {
+    "collection": "02 | Face, eyes and jewelry",
+    "objects": 150,
+    "vertices": 73448,
+    "triangles": 141316
+  },
+  {
+    "collection": "03 | Scalp, bangs, ponytail and cards",
+    "objects": 95,
+    "vertices": 71376,
+    "triangles": 140828
+  },
+  {
+    "collection": "04 | Technical outfit",
+    "objects": 60,
+    "vertices": 146251,
+    "triangles": 289708
+  },
+  {
+    "collection": "05 | Utility accessories",
+    "objects": 159,
+    "vertices": 22560,
+    "triangles": 44204
+  },
+  {
+    "collection": "06 | Court runner sneakers",
+    "objects": 86,
+    "vertices": 50984,
+    "triangles": 99728
+  }
+]
