@@ -1,0 +1,11 @@
+{
+  "default_asset": "nyra-visual",
+  "actual_textured_geometry_visible": true,
+  "front_and_rear_controls_checked": true,
+  "triangles_displayed": 156686,
+  "materials_displayed": 5,
+  "console_errors": 0,
+  "console_warnings": 0,
+  "screenshot": "qa/phase2/viewer-nyra.jpg",
+  "scope": "Visual review only; no gameplay or animation certification."
+}

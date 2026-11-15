@@ -1,0 +1,43 @@
+{
+  "authoring": {
+    "objects": 51,
+    "base_vertices": 43819,
+    "base_triangles": 83526,
+    "evaluated_triangles": 415040,
+    "materials": 19,
+    "armatures": 0
+  },
+  "export": {
+    "skin": {
+      "triangles": 39592,
+      "vertices": 20023,
+      "atlas": 2048
+    },
+    "eyes": {
+      "triangles": 2787,
+      "vertices": 1422,
+      "atlas": 512
+    },
+    "hair": {
+      "triangles": 11846,
+      "vertices": 6397,
+      "atlas": 1024
+    },
+    "outfit": {
+      "triangles": 100173,
+      "vertices": 50535,
+      "atlas": 2048
+    },
+    "metal": {
+      "triangles": 2288,
+      "vertices": 1162,
+      "atlas": 512
+    }
+  },
+  "notes": [
+    "Static visual review asset; no final rig.",
+    "Packed base-color atlases; simplified PBR roughness. Blender SSS and weave bump are not reproduced exactly."
+  ],
+  "export_triangles": 156686,
+  "glb_bytes": 12073716
+}

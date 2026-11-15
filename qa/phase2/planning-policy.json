@@ -1,0 +1,23 @@
+{
+  "planning": "deep",
+  "context_depth": "dependency",
+  "verification_depth": "impact",
+  "delegation": "none",
+  "allowed_write_scope": [
+    "/Users/dharaksh/Desktop/a"
+  ],
+  "reason_codes": [
+    "character-modeling",
+    "visual-acceptance",
+    "preserve-upstream"
+  ],
+  "acceptance": [
+    "editable original derivative",
+    "eight actual Blender views",
+    "game-light render",
+    "mesh statistics",
+    "weaknesses documented",
+    "commit and push"
+  ],
+  "decision": "Adapt source geometry, construct fitted clothing and new hair; preserve immutable original. No final rigging."
+}

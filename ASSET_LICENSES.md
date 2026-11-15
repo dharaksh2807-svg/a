@@ -38,3 +38,9 @@ The project scripts, viewer, documentation and environment-test cube were create
 MPFB core assets: CC0; add-on code: GPL. Blender Human Base Meshes: CC0. VRoid: proprietary preset license with commercial permissions and per-item exceptions. Ellie pose library: CC BY. Mixamo: commercial project use allowed according to Adobe's FAQ; no animation files downloaded and no raw-file redistribution assumed. Exact sources and caveats are in `ASSET_RESEARCH.md`.
 
 No purchased assets, unauthorized mirrors, scraped fashion photography, or third-party character concept sheets are included.
+
+## Phase 2 derivatives — 15 November 2026
+
+The packed NYRA blend, NYRA GLB, skin/eye atlases and all Phase 2 renders adapt Rain geometry and/or textures. Credit: **Rain Rig (CC) Blender Foundation | studio.blender.org**, source https://studio.blender.org/characters/rain/v3/ , license https://creativecommons.org/licenses/by/4.0/ . Changes include face/body reshaping, new brows and ponytail, costume construction/refitting, material changes, texture baking and geometry reduction. Preserve this notice with distribution. Original source bytes remain unchanged.
+
+`textures/nyra/technical-weave.png` is a deterministic original procedural textile texture generated in Blender with seed 218. The other Phase 2 PNG maps are actual Blender emission bakes from the model's material nodes. They are not generated concept images. New project-authored parts do not remove the underlying attribution obligations.

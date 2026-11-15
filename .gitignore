@@ -6,3 +6,10 @@ node_modules/
 source/upstream/*
 !source/upstream/README.md
 qa/evidence/*-page.html
+
+# Local Phase 2 iteration outputs; final renders and QA are tracked.
+renders/phase2/draft-*
+qa/phase2/draft-*
+scripts/refine_build.py
+qa/evidence/phase2-probe.*
+qa/phase2/components.log

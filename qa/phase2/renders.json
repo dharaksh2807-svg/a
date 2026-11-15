@@ -1,0 +1,52 @@
+[
+  {
+    "file": "renders/phase2/01-front.png",
+    "seconds": 16.4,
+    "view": "01-front"
+  },
+  {
+    "file": "renders/phase2/02-left-profile.png",
+    "seconds": 15.13,
+    "view": "02-left-profile"
+  },
+  {
+    "file": "renders/phase2/03-rear.png",
+    "seconds": 16.35,
+    "view": "03-rear"
+  },
+  {
+    "file": "renders/phase2/04-three-quarter-front.png",
+    "seconds": 18.82,
+    "view": "04-three-quarter-front"
+  },
+  {
+    "file": "renders/phase2/05-three-quarter-rear.png",
+    "seconds": 19.84,
+    "view": "05-three-quarter-rear"
+  },
+  {
+    "file": "renders/phase2/06-face.png",
+    "seconds": 28.44,
+    "view": "06-face"
+  },
+  {
+    "file": "renders/phase2/07-garment-detail.png",
+    "seconds": 29.14,
+    "view": "07-garment-detail"
+  },
+  {
+    "file": "renders/phase2/08-neutral-presentation.png",
+    "seconds": 22.18,
+    "view": "08-neutral-presentation"
+  },
+  {
+    "file": "renders/phase2/09-metro-light.png",
+    "seconds": 24.35,
+    "view": "09-metro-light"
+  },
+  {
+    "file": "renders/phase2/10-sneaker-detail.png",
+    "seconds": 34.04,
+    "view": "10-sneaker-detail"
+  }
+]

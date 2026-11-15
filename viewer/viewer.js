@@ -6,16 +6,16 @@ const stage=$('stage'),status=$('status');
 try {
   const renderer=new THREE.WebGLRenderer({canvas:stage.querySelector('canvas'),antialias:true});
   renderer.setPixelRatio(Math.min(devicePixelRatio,2));
-  renderer.toneMapping=THREE.ACESFilmicToneMapping;
+  renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.35;
   const scene=new THREE.Scene();scene.background=new THREE.Color('#29232c');
   const camera=new THREE.PerspectiveCamera(35,1,.01,100);
   const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;
-  scene.add(new THREE.HemisphereLight(0xfff0df,0x585779,3));
-  const key=new THREE.DirectionalLight(0xffffff,3);key.position.set(3,5,4);scene.add(key);
-  const rim=new THREE.DirectionalLight(0xb4c7ff,2);rim.position.set(-3,3,-3);scene.add(rim);
+  scene.add(new THREE.HemisphereLight(0xfff0df,0x888299,2.2));
+  const key=new THREE.DirectionalLight(0xffffff,2.1);key.position.set(3,5,4);scene.add(key);
+  const rim=new THREE.DirectionalLight(0xb4c7ff,1.2);rim.position.set(-3,3,-3);scene.add(rim);
   const loader=new GLTFLoader();let model,mixer,action,radius=2,serial=0,last=performance.now();
   let frontPositive=true;
-  function viewpoint(rear=false){camera.position.set(0,radius*.18,(rear?-1:1)*(frontPositive?1:-1)*radius*2.7);controls.target.set(0,0,0);controls.update();}
+  function viewpoint(rear=false){camera.position.set(0,radius*.18,(rear?-1:1)*(frontPositive?1:-1)*radius*3.25);controls.target.set(0,0,0);controls.update();}
   function release(root){const materials=new Set(),textures=new Set();root.traverse(o=>{o.geometry?.dispose();if(o.material)for(const m of [].concat(o.material)){materials.add(m);for(const value of Object.values(m))if(value?.isTexture)textures.add(value);}});textures.forEach(t=>t.dispose());materials.forEach(m=>m.dispose());}
   function wireframe(){model?.traverse(o=>{if(o.isMesh)for(const m of [].concat(o.material))m.wireframe=$('wire').checked;});}
   function install(gltf,label,request){
@@ -35,7 +35,7 @@ try {
     wireframe();status.textContent=`${label} · ${meshes} meshes · ${Math.round(triangles).toLocaleString()} triangles · ${materials.size} materials · ${skins} skinned meshes · ${gltf.animations.length} clips`;
   }
   async function load(url,label){const request=++serial;status.textContent=`Loading ${label}…`;try{install(await loader.loadAsync(url),label,request);}catch(error){if(request===serial)status.textContent=`Could not load GLB: ${error.message}`;}}
-  function bundled(){const name=$('asset').value;frontPositive=name==='rain-geometry-study';$('asset-note').textContent=frontPositive?'Static Rain geometry with one clay material. No rig, textures or animation. This is not the NYRA character.':'Environment smoke test only. The cube verifies rendering and export; it is not character geometry.';load(`../exports/${name}.glb`,name);}
+  function bundled(){const name=$('asset').value;frontPositive=name!=='environment-smoke';const notes={'nyra-visual':'NYRA’s actual geometry with baked color textures. Static review model; final rig and gameplay optimization are pending. Blender subsurface scattering and fine bump shading are simplified in this GLB.','rain-geometry-study':'Phase 1 archive: original Rain geometry in clay, not NYRA.','environment-smoke':'Environment test cube only.'};$('asset-note').textContent=notes[name];load(`../exports/${name}.glb`,name);}
   $('asset').onchange=bundled;
   $('file').onchange=async()=>{const file=$('file').files[0];if(!file)return;frontPositive=true;$('asset-note').textContent='Local GLB preview. Files stay on this computer. Compressed Draco/KTX2 assets require additional decoders and are not supported by this Phase 1 bench.';const request=++serial;status.textContent=`Loading ${file.name}…`;try{install(await loader.parseAsync(await file.arrayBuffer(),''),file.name,request);}catch(error){if(request===serial)status.textContent=`Could not load GLB: ${error.message}`;}};
   $('wire').onchange=wireframe;$('front').onclick=()=>viewpoint();$('rear').onclick=()=>viewpoint(true);

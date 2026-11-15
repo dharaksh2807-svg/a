@@ -1,0 +1,29 @@
+00:00.320  blend            | Read blend: "/Users/dharaksh/Desktop/a/source/blender/nyra/nyra-visual.blend"
+/Users/dharaksh/Desktop/a/scripts/export_nyra_visual.py:76: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('NYRA baked '+group);mat.use_nodes=True;p=mat.node_tree.nodes.get('Principled BSDF');p.inputs['Roughness'].default_value={'skin':.46,'eyes':.2,'hair':.61,'outfit':.62,'metal':.3}[group]
+Warning: No mesh data to join
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+13:14:10 | INFO: Starting glTF 2.0 export
+13:14:10 | INFO: Extracting primitive: GEO-rain-eyes.001
+13:14:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+13:14:10 | INFO: Primitives created: 1
+13:14:10 | INFO: Extracting primitive: GEO-rain-eyelashes.001
+13:14:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+13:14:10 | INFO: Primitives created: 1
+13:14:10 | INFO: Extracting primitive: NYRA · copper zipper teeth -1
+13:14:10 | INFO: Primitives created: 1
+13:14:10 | INFO: Extracting primitive: GEO-rain-body_nomask.005
+13:14:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+13:14:10 | INFO: Primitives created: 1
+13:14:10 | INFO: Extracting primitive: GEO-rain-body_nomask.001
+13:14:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+13:14:10 | INFO: Primitives created: 1
+13:14:10 | INFO: Finished glTF 2.0 export in 0.652249813079834 s
+
+VERDICT: PASS
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

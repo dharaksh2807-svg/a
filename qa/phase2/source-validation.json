@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "fitting_revision_6": true,
+    "waistband_within_torso": true,
+    "no_final_armature": true,
+    "editable_identity_key": true,
+    "finite_mesh_coordinates": true,
+    "all_meshes_have_uvs": true,
+    "all_meshes_have_materials": true,
+    "all_used_images_packed": true,
+    "no_external_blend_libraries": true,
+    "no_embedded_autorun_scripts": true
+  },
+  "pass": true,
+  "blender": "5.2.3 LTS",
+  "images": [
+    {
+      "name": "NYRA technical weave height",
+      "packed": true
+    },
+    {
+      "name": "TEX-rain_body_diffuse.1001.png",
+      "packed": true
+    },
+    {
+      "name": "TEX-rain_eyes.png.000",
+      "packed": true
+    }
+  ]
+}

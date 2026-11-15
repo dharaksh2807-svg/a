@@ -1,0 +1,104 @@
+{
+  "pass": true,
+  "render_count": 10,
+  "render_dimensions": [
+    1200,
+    1500
+  ],
+  "glb_triangles": 156686,
+  "glb_bytes": 12073716,
+  "glb_errors": 0,
+  "glb_warnings": 0,
+  "files": [
+    {
+      "path": "source/blender/nyra/nyra-visual.blend",
+      "bytes": 7586085,
+      "sha256": "e53d75c03e82f12d807dfe82774ad9c31813721df07bf158875adafd925f5e26"
+    },
+    {
+      "path": "exports/nyra-visual.glb",
+      "bytes": 12073716,
+      "sha256": "f57ff13b6b76dccec248f3a1f1fc9ed58cfaa55b62d1348f2e8e853ab3bf3f8e"
+    },
+    {
+      "path": "textures/nyra/eyes-basecolor.png",
+      "bytes": 47789,
+      "sha256": "ee8069afc223529d6c979a44074d814bab2cee3cf9fce1a70ad0d050f0172bea"
+    },
+    {
+      "path": "textures/nyra/hair-basecolor.png",
+      "bytes": 162731,
+      "sha256": "5e71aee3b237f7b4baa975e1e0d97ac07ef4fbbf7912ec0b297010731de4a4be"
+    },
+    {
+      "path": "textures/nyra/metal-basecolor.png",
+      "bytes": 36208,
+      "sha256": "4ec43c081a5a056c9f50926651217f079e26da31c03c8426d9eb809c2468790f"
+    },
+    {
+      "path": "textures/nyra/outfit-basecolor.png",
+      "bytes": 1403853,
+      "sha256": "8399b7224d173a9c584564bc633abbb445f74fe51bdbb43f7309edfa69d69a54"
+    },
+    {
+      "path": "textures/nyra/skin-basecolor.png",
+      "bytes": 1119942,
+      "sha256": "68a4c44249b76abf73bca929ae2b36f89490b80154895c058e494b6c1a62b981"
+    },
+    {
+      "path": "textures/nyra/technical-weave.png",
+      "bytes": 333836,
+      "sha256": "eda073206f11493bbf5dc946c02019acdf1003e078e22adc6721243386f7b9ec"
+    },
+    {
+      "path": "renders/phase2/01-front.png",
+      "bytes": 1916453,
+      "sha256": "16a1f9f5f57ea415c2a6e4ea13bfced9e1bb1421c891b70f749a4a1bbda2cf60"
+    },
+    {
+      "path": "renders/phase2/02-left-profile.png",
+      "bytes": 1834967,
+      "sha256": "1f86d63c1871117644e5bc60a55735f290b9c79111cb6ffa1b0e8262f647af4d"
+    },
+    {
+      "path": "renders/phase2/03-rear.png",
+      "bytes": 1921844,
+      "sha256": "e4580383f2bd8f398b2003eec05ac100e1a2c93d501a76d58e939479553a135f"
+    },
+    {
+      "path": "renders/phase2/04-three-quarter-front.png",
+      "bytes": 1813113,
+      "sha256": "493def6773de75d6a00eaffb6dc11fa454622307861e73cc5df5c071933982e6"
+    },
+    {
+      "path": "renders/phase2/05-three-quarter-rear.png",
+      "bytes": 1853172,
+      "sha256": "6205be159aa844558f94c17596ab7112c7f9b373229d8791fd28045769fd7f20"
+    },
+    {
+      "path": "renders/phase2/06-face.png",
+      "bytes": 1983106,
+      "sha256": "fc5b09d0d1e08f126002a18cf00d4d0bfa37f3320c944b5d115dae974230b0e7"
+    },
+    {
+      "path": "renders/phase2/07-garment-detail.png",
+      "bytes": 1973195,
+      "sha256": "64ed850882568669ea3ed9c5d9597f685cb4e14fd2371d20a57d5b37cf638720"
+    },
+    {
+      "path": "renders/phase2/08-neutral-presentation.png",
+      "bytes": 1906217,
+      "sha256": "285a18f74f5a8b92f75efd2e7ff699746505be1f82644c879988cc0b4572e0de"
+    },
+    {
+      "path": "renders/phase2/09-metro-light.png",
+      "bytes": 1831465,
+      "sha256": "066bfb45babfaef05fe8a14b009d70c147b4f49f9237d14aff6ec524d7de0881"
+    },
+    {
+      "path": "renders/phase2/10-sneaker-detail.png",
+      "bytes": 1921650,
+      "sha256": "62cef3b7bd728ce1f96d86e5787a23931650f7b8dc0e4fbb3427812adf85331f"
+    }
+  ]
+}

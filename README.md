@@ -1,5 +1,21 @@
 # NYRA — Urban Velocity
 
+Phase 2 now includes an actual editable character model, ten Blender proof renders and a textured static GLB. Read the [Phase 2 quality report](PHASE2_QUALITY_REPORT.md) for measurements and remaining weaknesses.
+
+![NYRA actual Blender render](renders/phase2/04-three-quarter-front.png)
+
+- Editable source: [nyra-visual.blend](source/blender/nyra/nyra-visual.blend), with packed images.
+- Browser asset: [nyra-visual.glb](exports/nyra-visual.glb), with five baked color atlases.
+- Face proof: [face close-up](renders/phase2/06-face.png).
+- Viewer: run `npm run viewer`, then open http://127.0.0.1:8765/viewer/ . NYRA is the default asset.
+- Final rigging, animation/deformation checks, runtime LODs and mobile optimization remain pending.
+
+Rain-derived anatomy is CC BY 4.0; attribution and modification records are in [ASSET_LICENSES.md](ASSET_LICENSES.md). No changes were made to the game repository.
+
+---
+
+# Phase 1 archive
+
 Standalone character project for Metro Runner 3D. **Phase 1: research, art direction and an executable asset foundation.** No changes to the `ss` game repository.
 
 ![Three original runner concepts](references/concepts/runner-concepts.png)

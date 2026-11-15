@@ -7,17 +7,28 @@
   <script type="importmap">{"imports":{"three":"../node_modules/three/build/three.module.js","three/addons/":"../node_modules/three/examples/jsm/"}}</script>
 </head>
 <body>
-  <header><span class="eyebrow">METRO RUNNER 3D / CHARACTER LAB</span><h1>NYRA<span>Urban Velocity</span></h1><p>Phase 1 · Art direction & foundation evaluation</p></header>
+  <header><span class="eyebrow">METRO RUNNER 3D / CHARACTER LAB</span><h1>NYRA<span>Urban Velocity</span></h1><p>Phase 2 · Character modeling & look development</p></header>
   <main>
-    <section class="concept"><div class="section-title"><h2>Three directions. One runner.</h2><span>GENERATED CONCEPT ART · NOT 3D OUTPUT</span></div><img src="../references/concepts/runner-concepts.png" alt="Original adult runner concepts: coral and plum NYRA, cobalt and mint SORA, saffron and teal ZURI, each shown from the front and rear"><p><strong>Selected: NYRA.</strong> Coral shoulder panels, plum trackwear and a segmented ponytail. Shorten the ponytail and simplify sneaker details for gameplay.</p></section>
-    <section><div class="section-title"><h2>Foundation inspection</h2><span>REAL BLENDER ASSET</span></div>
-      <p>Rain is the selected editable foundation. These images show the unmodified character with inspection lighting. NYRA’s sculpt, wardrobe and game rig are future production work.</p>
-      <div class="render-pair"><figure><img src="../renders/rain-foundation-front.png" alt="Actual Blender render of original Rain foundation from the front"><figcaption>Front · original Rain</figcaption></figure><figure><img src="../renders/rain-foundation-rear.png" alt="Actual Blender render of original Rain foundation from the rear"><figcaption>Rear · original Rain</figcaption></figure></div>
-      <p class="credit">Rain Rig (CC) Blender Foundation | <a href="https://studio.blender.org/characters/rain/v3/">studio.blender.org</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Inspection renders change lighting, camera and subdivision level.</p>
+    <section><div class="section-title"><h2>NYRA · Visual production</h2><span>ACTUAL BLENDER MODEL & RENDERS</span></div>
+      <p>Reshaped face and proportions, brown eyes, fitted eyebrows, cropped coral bomber, plum trackwear, sculpted hair and new sneaker details. Static visual model; final rigging remains pending.</p>
+      <div class="render-pair"><figure><img src="../renders/phase2/04-three-quarter-front.png" alt="Actual NYRA full-body Blender render"><figcaption>NYRA · three-quarter front</figcaption></figure><figure><img src="../renders/phase2/06-face.png" alt="Actual NYRA face close-up from Blender"><figcaption>Face · revised anatomy and shading</figcaption></figure></div>
+      <details><summary>All ten proof renders</summary><div class="proof-grid">
+<a href="../renders/phase2/01-front.png"><img loading="lazy" src="../renders/phase2/01-front.png" alt="NYRA front">front</a>
+<a href="../renders/phase2/02-left-profile.png"><img loading="lazy" src="../renders/phase2/02-left-profile.png" alt="NYRA left profile">left profile</a>
+<a href="../renders/phase2/03-rear.png"><img loading="lazy" src="../renders/phase2/03-rear.png" alt="NYRA rear">rear</a>
+<a href="../renders/phase2/04-three-quarter-front.png"><img loading="lazy" src="../renders/phase2/04-three-quarter-front.png" alt="NYRA three quarter front">three quarter front</a>
+<a href="../renders/phase2/05-three-quarter-rear.png"><img loading="lazy" src="../renders/phase2/05-three-quarter-rear.png" alt="NYRA three quarter rear">three quarter rear</a>
+<a href="../renders/phase2/06-face.png"><img loading="lazy" src="../renders/phase2/06-face.png" alt="NYRA face">face</a>
+<a href="../renders/phase2/07-garment-detail.png"><img loading="lazy" src="../renders/phase2/07-garment-detail.png" alt="NYRA garment detail">garment detail</a>
+<a href="../renders/phase2/08-neutral-presentation.png"><img loading="lazy" src="../renders/phase2/08-neutral-presentation.png" alt="NYRA neutral presentation">neutral presentation</a>
+<a href="../renders/phase2/09-metro-light.png"><img loading="lazy" src="../renders/phase2/09-metro-light.png" alt="NYRA metro light">metro light</a>
+<a href="../renders/phase2/10-sneaker-detail.png"><img loading="lazy" src="../renders/phase2/10-sneaker-detail.png" alt="NYRA sneaker detail">sneaker detail</a>
+</div></details>
+      <p class="credit">Anatomy adapted from Rain Rig (CC) Blender Foundation | <a href="https://studio.blender.org/characters/rain/v3/">studio.blender.org</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. NYRA modifications and limitations: <a href="../PHASE2_QUALITY_REPORT.md">quality report</a>.</p>
     </section>
     <section><div class="section-title"><h2>GLB inspection bench</h2><span>LOCAL · NO UPLOADS</span></div>
-      <div class="toolbar"><label>Asset <select id="asset"><option value="rain-geometry-study">Rain · static clay geometry study</option><option value="environment-smoke">Environment test cube</option></select></label><label class="file">Open a GLB <input id="file" type="file" accept=".glb"></label><button id="front">Front</button><button id="rear">Rear</button><label><input type="checkbox" id="wire"> Wireframe</label><label><input type="checkbox" id="spin"> Rotate</label><label>Animation <select id="clips" disabled><option>No clips</option></select></label></div>
-      <p id="asset-note">Static Rain geometry with one clay material. No rig, textures or animation. This is not the NYRA character.</p>
+      <div class="toolbar"><label>Asset <select id="asset"><option value="nyra-visual">NYRA · textured visual model</option><option value="rain-geometry-study">Rain · static clay geometry study</option><option value="environment-smoke">Environment test cube</option></select></label><label class="file">Open a GLB <input id="file" type="file" accept=".glb"></label><button id="front">Front</button><button id="rear">Rear</button><label><input type="checkbox" id="wire"> Wireframe</label><label><input type="checkbox" id="spin"> Rotate</label><label>Animation <select id="clips" disabled><option>No clips</option></select></label></div>
+      <p id="asset-note">NYRA’s actual geometry with baked color textures. Static review model; final rig and gameplay optimization are pending.</p>
       <div id="stage"><canvas aria-label="Interactive 3D asset viewer"></canvas></div>
       <p id="status" role="status" aria-live="polite">Loading viewer…</p>
     </section>
