@@ -1,0 +1,26 @@
+[
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.glb",
+    "bytes": 37305096,
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a-pixel-match.glb",
+    "bytes": 53674784,
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-b/nyra-b.glb",
+    "bytes": 39715448,
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-b/nyra-b-pixel-match.glb",
+    "bytes": 55567732,
+    "errors": 0,
+    "warnings": 0
+  }
+]

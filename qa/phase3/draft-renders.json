@@ -1,0 +1,22 @@
+[
+  {
+    "file": "renders/phase3/draft-04-three-quarter-front.png",
+    "seconds": 3.75,
+    "view": "04-three-quarter-front"
+  },
+  {
+    "file": "renders/phase3/draft-03-rear.png",
+    "seconds": 3.26,
+    "view": "03-rear"
+  },
+  {
+    "file": "renders/phase3/draft-06-face.png",
+    "seconds": 4.61,
+    "view": "06-face"
+  },
+  {
+    "file": "renders/phase3/draft-02-left-profile.png",
+    "seconds": 3.3,
+    "view": "02-left-profile"
+  }
+]

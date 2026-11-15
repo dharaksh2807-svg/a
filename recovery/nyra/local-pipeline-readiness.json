@@ -1,0 +1,28 @@
+{
+  "local_checkout": "52b8cf5",
+  "single_view": {
+    "cli_built": true,
+    "cli_path": "/Users/dharaksh/image-to-3dlab/vendor/pixal3d-cpp/build/trellis-cli",
+    "models_dir": "/Users/dharaksh/image-to-3dlab/vendor/pixal3d-cpp/models/pixal3d-sv",
+    "weights_present": 10,
+    "ready": true
+  },
+  "front_back": {
+    "cli_built": true,
+    "models_dir": "/Users/dharaksh/image-to-3dlab/vendor/pixal3d-cpp/models/pixal3d-q8_0-v1",
+    "missing": [
+      "dinov3.gguf",
+      "pixal3d_naf.gguf",
+      "pixal3d_ss_flow_mv.gguf",
+      "ss_dec.gguf",
+      "pixal3d_shape_flow_512_mv.gguf",
+      "shape_dec.gguf",
+      "pixal3d_shape_flow_1024_mv.gguf",
+      "pixal3d_tex_flow_1024_mv.gguf",
+      "tex_dec.gguf"
+    ],
+    "ready": false
+  },
+  "steps_12_problem": null,
+  "scope": "Read-only file readiness; no inference, bootstrap, rigging or downloads executed."
+}

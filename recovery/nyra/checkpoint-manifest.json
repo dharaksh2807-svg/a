@@ -1,0 +1,20 @@
+{
+  "status": "Recovery planning only. Phase 3 revision 4 retained; no further mesh editing authorized in this step.",
+  "files": [
+    {
+      "path": "source/blender/nyra/nyra-visual.blend",
+      "bytes": 7586085,
+      "sha256": "e53d75c03e82f12d807dfe82774ad9c31813721df07bf158875adafd925f5e26"
+    },
+    {
+      "path": "source/blender/nyra/nyra-phase3.blend",
+      "bytes": 7885050,
+      "sha256": "76cae9d6fce90a565ab995deb12d1ff461832d600ad1a90adc251260bc192fd5"
+    },
+    {
+      "path": "recovery/nyra/approved-concept.png",
+      "bytes": 2135462,
+      "sha256": "9a6c0872f50bb04f9d4c2bb196255d140adc763fa7bc42d73d81b6e1023abcaf"
+    }
+  ]
+}

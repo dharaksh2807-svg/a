@@ -1,0 +1,20 @@
+
+About to install:
+
+  backend: Pixal3D (raven38/pixal3d.cpp)
+  route:   front + back (multi-view flows)
+  weights: 5.9 GB -> vendor/pixal3d-cpp/models/pixal3d-q8_0-v1/
+             raven38/pixal3d-q8_0-v1: the four multi-view flows only; the encoder and
+             decoders are shared with the single-view set (linked, not copied)
+
+  licence: MIT (code and flow weights); the bundled image encoder is under the
+  DINOv3 License. https://huggingface.co/raven38/pixal3d-q8_0-v1
+
+
+Fetching raven38/pixal3d-q8_0-v1 flows (5.9 GB, resumable)...
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:  20%|██        | 1/5 [00:01<00:04,  1.09s/it]Fetching 5 files:  40%|████      | 2/5 [02:44<04:50, 96.76s/it]Fetching 5 files:  60%|██████    | 3/5 [04:36<03:27, 103.50s/it]Fetching 5 files:  80%|████████  | 4/5 [06:27<01:46, 106.34s/it]Fetching 5 files: 100%|██████████| 5/5 [08:13<00:00, 106.56s/it]Fetching 5 files: 100%|██████████| 5/5 [08:13<00:00, 98.80s/it] 
+  weights in /Users/dharaksh/image-to-3dlab/vendor/pixal3d-cpp/models/pixal3d-q8_0-v1
+
+Done. Generate from a front and a back picture with:
+    python scripts/pixal3d_generate.py front.png output.glb --back back.png

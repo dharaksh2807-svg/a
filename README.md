@@ -1,5 +1,19 @@
 # NYRA — Urban Velocity
 
+## Phase 3 replacement review
+
+Two independent local Pixal3D front/back candidates, packed Blender scenes, 24 actual renders and an old/A/B comparison viewer are preserved. **Both candidates failed the visual quality gate**: malformed torso surfaces, poor faces, rough hair and distorted shoes remain. Pixel Match comparisons are retained but introduce projection artifacts. No rigging, animation or game integration began.
+
+- [Critical assessment and measured statistics](recovery/nyra/REPLACEMENT_REPORT.md)
+- [Actual Blender render gallery](recovery/nyra/renders.html)
+- [Candidate A Blender source](recovery/nyra/candidates/candidate-a/renders/original/nyra-review.blend) · [Candidate B Blender source](recovery/nyra/candidates/candidate-b/renders/original/nyra-review.blend)
+- Run `npm run viewer` and open http://127.0.0.1:8765/viewer/ for synchronized original/Pixel Match inspection.
+- [Raw-output preservation and local-only dense intermediates](recovery/nyra/RAW_OUTPUTS.md)
+
+![Actual old/A/B mesh comparison](recovery/nyra/qa/viewer-comparison.jpg)
+
+## Phase 2 checkpoint
+
 Phase 2 now includes an actual editable character model, ten Blender proof renders and a textured static GLB. Read the [Phase 2 quality report](PHASE2_QUALITY_REPORT.md) for measurements and remaining weaknesses.
 
 ![NYRA actual Blender render](renders/phase2/04-three-quarter-front.png)

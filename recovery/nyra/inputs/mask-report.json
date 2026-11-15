@@ -1,0 +1,81 @@
+{
+  "matte_model": "birefnet-lite-lean",
+  "images": [
+    {
+      "source": "01-front-a-pose.png",
+      "output": "nyra-front.png",
+      "source_size": [
+        1024,
+        1536
+      ],
+      "source_foreground_bbox": [
+        201,
+        20,
+        814,
+        1490
+      ],
+      "output_size": [
+        1024,
+        1536
+      ],
+      "transparent_fraction": 0.7843392690022787
+    },
+    {
+      "source": "02-rear-a-pose.png",
+      "output": "nyra-back.png",
+      "source_size": [
+        1024,
+        1536
+      ],
+      "source_foreground_bbox": [
+        200,
+        16,
+        816,
+        1483
+      ],
+      "output_size": [
+        1024,
+        1536
+      ],
+      "transparent_fraction": 0.7858257293701172
+    },
+    {
+      "source": "03-left-profile.png",
+      "output": "nyra-side.png",
+      "source_size": [
+        1024,
+        1536
+      ],
+      "source_foreground_bbox": [
+        364,
+        16,
+        693,
+        1479
+      ],
+      "output_size": [
+        1024,
+        1536
+      ],
+      "transparent_fraction": 0.8517176310221354
+    },
+    {
+      "source": "04-face-front.png",
+      "output": "nyra-face.png",
+      "source_size": [
+        1199,
+        1312
+      ],
+      "source_foreground_bbox": [
+        15,
+        10,
+        1186,
+        1312
+      ],
+      "output_size": [
+        1199,
+        1312
+      ],
+      "transparent_fraction": 0.42744716125226306
+    }
+  ]
+}

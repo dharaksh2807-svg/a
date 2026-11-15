@@ -1,0 +1,32 @@
+{
+  "status": "executed_two_candidates_visual_gate_failed",
+  "strategy": "A: replace character mesh; retain production infrastructure",
+  "engine": "AssetFurnace/Pixal3D front+back",
+  "local_checkout": "52b8cf5",
+  "front": "inputs/nyra-front.png",
+  "back": "inputs/nyra-back.png",
+  "manual_references": [
+    "reference-set/03-left-profile.png",
+    "reference-set/04-face-front.png"
+  ],
+  "proposed_seeds": [
+    42,
+    1337
+  ],
+  "steps": 12,
+  "generation_resolution": 1024,
+  "prerequisites": [
+    "approve derived references",
+    "complete missing multi-view weights",
+    "inspect cutout masks and front/rear scale"
+  ],
+  "rig": false,
+  "animate": false,
+  "integrate": false,
+  "generate_now": false,
+  "prerequisites_completed": [
+    "user replacement authorization",
+    "official multi-view weights installed",
+    "four references and alpha composites visually inspected"
+  ]
+}

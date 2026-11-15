@@ -13,3 +13,7 @@ qa/phase2/draft-*
 scripts/refine_build.py
 qa/evidence/phase2-probe.*
 qa/phase2/components.log
+
+# Unmodified dense inference intermediates exceed GitHub's per-file limit.
+# Kept locally and SHA-256 inventoried in each candidate preservation manifest.
+recovery/nyra/candidates/*/*.post.bin

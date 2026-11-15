@@ -1,0 +1,92 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"pixal3d\",\n  \"label\": \"Pixal3D (C++/GGML)\",\n  \"makes\": \"3D models\",\n  \"state\": \"ready\",\n  \"recommended\": true,\n  \"best_for\": \"Best results we have. One pass, no repaint needed.\",\n  \"licence\": \"MIT (code + flow weights); DINOv3 License (bundled encoder)\",\n  \"download_size\": \"8.6 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"hunyuan-rocm\",\n  \"label\": \"Hunyuan3D-2.1 (AMD)\",\n  \"makes\": \"3D models\",\n  \"state\": \"unsupported\",\n  \"best_for\": \"Hunyuan on an AMD card: Tencent's own shape and PBR paint, one run.\",\n  \"licence\": \"Tencent Hunyuan Community License (code + weights)\",\n  \"caveat\": \"The Hunyuan weights are not licensed for use in the EU, the UK or South Korea. Check the licence before downloading.\",\n  \"download_size\": \"19.7 GB\",\n  \"runs_here\": false\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"hunyuan-cuda\",\n  \"label\": \"Hunyuan3D-2.1 (NVIDIA)\",\n  \"makes\": \"3D models\",\n  \"state\": \"unsupported\",\n  \"best_for\": \"Hunyuan on an NVIDIA card: Tencent's own shape and PBR paint, one run.\",\n  \"licence\": \"Tencent Hunyuan Community License (code + weights)\",\n  \"caveat\": \"The Hunyuan weights are not licensed for use in the EU, the UK or South Korea. Check the licence before downloading.\",\n  \"download_size\": \"19.7 GB\",\n  \"runs_here\": false\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"hunyuan_xiong\",\n  \"label\": \"Hunyuan3D-MLX (Xiong, full pipeline)\",\n  \"makes\": \"3D models\",\n  \"state\": \"missing\",\n  \"best_for\": \"Fast, clean results, and the quickest to run from a fresh clone.\",\n  \"licence\": \"MIT (code); Tencent Hunyuan Community License (weights)\",\n  \"caveat\": \"The Hunyuan weights are not licensed for use in the EU, the UK or South Korea. Check the licence before downloading.\",\n  \"download_size\": \"13.9 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"trellis\",\n  \"label\": \"TRELLIS.2 (clean port)\",\n  \"makes\": \"3D models\",\n  \"state\": \"missing\",\n  \"best_for\": \"Highest fidelity, closest to the official demo.\",\n  \"licence\": \"MIT (code + weights); DINOv3 License (image encoder)\",\n  \"caveat\": \"Its DINOv3 image encoder is gated: request access to facebook/dinov3-vitl16-pretrain-lvd1689m on Hugging Face (Meta approves by hand) and sign in under Hugging Face sign-in at the top of this page, or the first run stops after the 14 GB download.\",\n  \"download_size\": \"16.7 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"hunyuan-mlx\",\n  \"label\": \"Hunyuan3D-MLX (dgrauet shape + Xiong paint)\",\n  \"makes\": \"3D models\",\n  \"state\": \"missing\",\n  \"best_for\": \"The older Hunyuan pairing: dgrauet's shape stage, Xiong's paint stage.\",\n  \"licence\": \"MIT (Xiong paint code); Tencent Hunyuan Community License (weights)\",\n  \"caveat\": \"The Hunyuan weights are not licensed for use in the EU, the UK or South Korea. Check the licence before downloading.\",\n  \"download_size\": \"21.7 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"sf3d\",\n  \"label\": \"Stable Fast 3D\",\n  \"makes\": \"3D models\",\n  \"state\": \"missing\",\n  \"best_for\": \"Fastest of the lot, and the smallest download. Good for a quick look.\",\n  \"licence\": \"Stability AI Community License (non-commercial under $1M revenue)\",\n  \"caveat\": \"The SF3D weights are gated: accept Stability's licence on Hugging Face and sign in under Hugging Face sign-in at the top of this page before setting it up.\",\n  \"download_size\": \"5.0 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"autorig\",\n  \"label\": \"Auto-rig (SkinTokens)\",\n  \"makes\": \"pictures\",\n  \"state\": \"missing\",\n  \"best_for\": \"Gives a humanoid model a skeleton and skin weights, so the Rig tab can play preset animations on it.\",\n  \"licence\": \"MIT\",\n  \"download_size\": \"1.5 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"matte\",\n  \"label\": \"Background remover (BiRefNet-lite)\",\n  \"makes\": \"pictures\",\n  \"state\": \"ready\",\n  \"best_for\": \"Cuts the subject out before every generator, keeping the thin and light-coloured parts the built-in u2net loses.\",\n  \"licence\": \"MIT\",\n  \"download_size\": \"172.3 MB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"flux-image\",\n  \"label\": \"FLUX.2 klein 4B (text to image)\",\n  \"makes\": \"pictures\",\n  \"state\": \"missing\",\n  \"best_for\": \"Makes the source image when you do not have one, and draws the back for front + back builds. Prompt in, picture out.\",\n  \"licence\": \"Apache-2.0\",\n  \"download_size\": \"8.3 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"flux-image-light\",\n  \"label\": \"FLUX.2 klein 4B Light (text to image, less memory)\",\n  \"makes\": \"pictures\",\n  \"state\": \"missing\",\n  \"recommended\": true,\n  \"best_for\": \"The same pictures for machines with 16 GB of memory or less: about 5 GB while drawing instead of about 9.\",\n  \"licence\": \"Apache-2.0\",\n  \"download_size\": \"4.9 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"front-back\",\n  \"label\": \"Front + back\",\n  \"makes\": \"pictures\",\n  \"state\": \"missing\",\n  \"best_for\": \"Builds characters and props from a front and a back picture: the picture engine draws the back, Pixal3D builds the shape from both, and Pixel Match paints from both, so the sides and back match your picture instead of being guessed.\",\n  \"licence\": \"MIT + DINOv3 License (Pixal3D)\",\n  \"download_size\": \"5.5 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"upscaler\",\n  \"label\": \"Hero face upscaler (Real-ESRGAN)\",\n  \"makes\": \"pictures\",\n  \"state\": \"missing\",\n  \"best_for\": \"Sharpens the close crop of a character's head for Hero face, so the head built from it keeps real eyelids and solid hair.\",\n  \"licence\": \"BSD-3-Clause\",\n  \"download_size\": \"63.9 MB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"qwen-image\",\n  \"label\": \"Qwen-Image 2.1 (text to image)\",\n  \"makes\": \"pictures\",\n  \"state\": \"missing\",\n  \"best_for\": \"Makes the source image when you do not have one. Prompt in, picture out.\",\n  \"licence\": \"Qwen Research License\",\n  \"download_size\": \"14.1 GB\",\n  \"runs_here\": true\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structured_content": null,
+  "is_error": false,
+  "result_type": "complete"
+}

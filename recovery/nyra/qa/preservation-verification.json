@@ -1,0 +1,24 @@
+[
+  {
+    "path": "source/blender/nyra/nyra-visual.blend",
+    "preserved": true
+  },
+  {
+    "path": "source/blender/nyra/nyra-phase3.blend",
+    "preserved": true
+  },
+  {
+    "path": "recovery/nyra/approved-concept.png",
+    "preserved": true
+  },
+  {
+    "candidate": "a",
+    "pixel_match_positions_uv_indices_unchanged": true,
+    "base_color_changed": true
+  },
+  {
+    "candidate": "b",
+    "pixel_match_positions_uv_indices_unchanged": true,
+    "base_color_changed": true
+  }
+]

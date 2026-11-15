@@ -1,0 +1,42 @@
+{
+  "back_input": {
+    "path": "/Users/dharaksh/Desktop/a/recovery/nyra/inputs/nyra-back.png",
+    "sha256": "f068fc020304e207c10053bd15cdc2ce263111f4466392972e90b80269f57218"
+  },
+  "backend": "pixal3d",
+  "components": [],
+  "input": {
+    "path": "/Users/dharaksh/Desktop/a/recovery/nyra/inputs/nyra-front.png",
+    "sha256": "1d011876342d228ee9abd85e525384eaae0c5c39808f2ae3853f4be3982a4633"
+  },
+  "license": {
+    "name": "MIT (code + flow weights); DINOv3 License (bundled encoder)",
+    "url": "https://huggingface.co/raven38/pixal3d-sv-q8_0-v1"
+  },
+  "made_with": {
+    "name": "AssetFurnace",
+    "url": "https://assetfurnace.com",
+    "version": "0.5.10"
+  },
+  "output": {
+    "classification": "commercial-clear",
+    "path": "/Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-a/nyra-a.glb",
+    "sha256": "862f8105ecb861efc3d959dc81762c4fc6c5ee0016052795bb42d262d60c0f5d"
+  },
+  "parameters": {
+    "fov": 0.3490658503988659,
+    "gsh": null,
+    "gss": 10.0,
+    "matted": true,
+    "res": 1024,
+    "seed": 42,
+    "steps": 12,
+    "views": "front + back"
+  },
+  "post_dump": "nyra-a.post.bin",
+  "schema_version": 1,
+  "shape": "nyra-a.shape.bin",
+  "timings_seconds": {
+    "total": 671.9
+  }
+}

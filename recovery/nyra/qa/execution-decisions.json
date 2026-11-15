@@ -1,0 +1,23 @@
+[
+  {
+    "action": "Install missing official multiview weights",
+    "authorization": "User explicitly approved download and replacement execution",
+    "evidence": "bootstrap_pixal3d.py --multiview --yes completed; multiview-ready.json reports ready",
+    "reuse": "Existing shared encoder/decoder weights reused; no dependency reinstall"
+  },
+  {
+    "action": "Generate two independent 1024 front/back candidates",
+    "seeds": [
+      42,
+      1337
+    ],
+    "steps": 12,
+    "execution": "Serial process guard waits for trellis-cli idle before each candidate",
+    "runtime_limitation": "MV weight family validated at four views, while the authorized AssetFurnace front/back path supplies two. Treat visual quality as unproven."
+  },
+  {
+    "action": "Review raw and Pixel Match variants",
+    "geometry": "No retopology, decimation, rigging or animation. Pixel Match base-color comparison only.",
+    "proof": "Actual imported meshes rendered in neutral Blender studio, clay and shader-generated triangle edges."
+  }
+]

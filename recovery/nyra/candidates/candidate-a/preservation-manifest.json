@@ -1,0 +1,97 @@
+[
+  {
+    "path": "recovery/nyra/candidates/candidate-a/generation.log",
+    "bytes": 9186,
+    "sha256": "ea327a9061912accb821a7364ec62eeea62956272f483cecfeaa6930f4d03740"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a-pixel-match.glb",
+    "bytes": 53674784,
+    "sha256": "587f953adb1c0dc8ed612fa60f2af9c15de4467847f775b90e1bbd1060d5bde2"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.glb",
+    "bytes": 37305096,
+    "sha256": "862f8105ecb861efc3d959dc81762c4fc6c5ee0016052795bb42d262d60c0f5d"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.mvinput/transforms.json",
+    "bytes": 991,
+    "sha256": "c958461ba8f74e5c93abe259ac13319c4ae720548cd8b7f0643480890c3a0cf2"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.mvinput/view_000.png",
+    "bytes": 207235,
+    "sha256": "75b90712c2c462572b97820e15e3a912f2104c4381e8fa77520f810b3a3a9048"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.mvinput/view_180.png",
+    "bytes": 201450,
+    "sha256": "286450886d8297ffed4e01d1fdc2970482157da4129b199b6da0af6fba0c531c"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.ply",
+    "bytes": 54438378,
+    "sha256": "8b8663281196d660bfec3b4f19a6b69c08acb0ad829dafc2cf0f056f7a111c37"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.post.bin",
+    "bytes": 120696232,
+    "sha256": "afd7caa2c36b2f64f3145512e7dc526bb96a5f9ae55112e13048a93aeb6e297b"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.provenance.json",
+    "bytes": 1226,
+    "sha256": "731607e9ea641efca4fbe3040cf66e350eb492bed94dcd530f2527eb953b61d1"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.shape.bin",
+    "bytes": 485108,
+    "sha256": "e7657ce68ec5a485422f1beb22918b0f060465c6c5565414241ce446ae5308fe"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.svviews/transforms.json",
+    "bytes": 1024,
+    "sha256": "fbcb536bb0d39d64ba432adce5e57951d81e767f649b0c8cd4ba8eccf23c631e"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.svviews/view_000.png",
+    "bytes": 738859,
+    "sha256": "cbf70457e05fbbe1d251c13e04c4b99042958b99263bbbcf4b63fb6562093e80"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.svviews/view_180.png",
+    "bytes": 724260,
+    "sha256": "927c6c3aa7cbfb70238f714f07ae9600043b33af9262c87d687e67f6339104bc"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a_base.png",
+    "bytes": 30248266,
+    "sha256": "2ab807159dfa34791906558c0b244cafc57f262d8ff7d7ab9cc74cbf4fd5c493"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/pixel-match-trust.png",
+    "bytes": 1394621,
+    "sha256": "e235bf99124a4039e6bd489ce55f134c32c3fa83a8be7bcde7bf35b2b73c7b1f"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/pixel-match.log",
+    "bytes": 367,
+    "sha256": "78e12aa0b398b7644271764962a1956d4e2f1f72683110f5da038309a58de70c"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/render-original.log",
+    "bytes": 2144,
+    "sha256": "932ac28988b97af02828d58884cab4b4ce6442917b99ed5b6bed6e5963365f94"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/render-pixel-match.log",
+    "bytes": 1495,
+    "sha256": "c7a0a4f0bd0723f4ddf39033c66a782ae2e938fc719abdded8cbe0c87a60abc0"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/render-wireframe-face.log",
+    "bytes": 1239,
+    "sha256": "68e3caade6503f1642fa38cbca9fea98894b9d8e416ddc83e209042ea3d5f633"
+  }
+]

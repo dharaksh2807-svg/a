@@ -1,0 +1,16 @@
+[
+  {
+    "candidate": "a",
+    "source_reopened": true,
+    "packed_images": 2,
+    "triangles": 958378,
+    "camera": "Review camera"
+  },
+  {
+    "candidate": "b",
+    "source_reopened": true,
+    "packed_images": 2,
+    "triangles": 995454,
+    "camera": "Review camera"
+  }
+]

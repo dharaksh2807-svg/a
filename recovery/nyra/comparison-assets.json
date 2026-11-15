@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Phase 2 \u00b7 preserved",
+    "path": "../exports/nyra-visual.glb"
+  },
+  {
+    "label": "Candidate A",
+    "variants": [
+      {
+        "label": "Original generated textures",
+        "path": "../recovery/nyra/candidates/candidate-a/nyra-a.glb"
+      },
+      {
+        "label": "Pixel Match comparison",
+        "path": "../recovery/nyra/candidates/candidate-a/nyra-a-pixel-match.glb"
+      }
+    ]
+  },
+  {
+    "label": "Candidate B",
+    "variants": [
+      {
+        "label": "Original generated textures",
+        "path": "../recovery/nyra/candidates/candidate-b/nyra-b.glb"
+      },
+      {
+        "label": "Pixel Match comparison",
+        "path": "../recovery/nyra/candidates/candidate-b/nyra-b-pixel-match.glb"
+      }
+    ]
+  }
+]

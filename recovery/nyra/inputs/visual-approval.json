@@ -1,0 +1,13 @@
+{
+  "reviewer": "assistant visual inspection",
+  "status": "suitable_for_candidate_generation_not_final_character_approval",
+  "identity": "Adult semi-realistic face, dark violet ponytail, purple dropped jacket, black crop, fitted black-purple trousers, gloves, matching sneakers retained.",
+  "silhouette": "Front/back same 1416px silhouette height, common floor1476; preserved aspect ratio; near A-pose. Both hands and feet present.",
+  "limitations": [
+    "Small emblem and seam differences across derived views",
+    "Fine hair alpha edge contamination",
+    "Rear/side pony tip differs slightly",
+    "Image-derived turnarounds are not calibrated physical photography"
+  ],
+  "side_and_face": "Manual QA references only; not projected through invented cameras."
+}

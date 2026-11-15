@@ -1,0 +1,9 @@
+00:00.345  blend            | Read blend: "/Users/dharaksh/Desktop/a/source/blender/nyra/nyra-visual.blend"
+/Users/dharaksh/Desktop/a/scripts/upgrade_nyra_phase3.py:13: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=srgb(color);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=srgb(color);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=metal;return m
+Info: No new files have been packed
+Info: Saved as "nyra-phase3.blend"
+VERDICT: PASS
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

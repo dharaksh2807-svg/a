@@ -7,9 +7,16 @@
   <script type="importmap">{"imports":{"three":"../node_modules/three/build/three.module.js","three/addons/":"../node_modules/three/examples/jsm/"}}</script>
 </head>
 <body>
-  <header><span class="eyebrow">METRO RUNNER 3D / CHARACTER LAB</span><h1>NYRA<span>Urban Velocity</span></h1><p>Phase 2 · Character modeling & look development</p></header>
+  <header><span class="eyebrow">METRO RUNNER 3D / CHARACTER LAB</span><h1>NYRA<span>Urban Velocity</span></h1><p>Phase 3 · Replacement candidate review</p></header>
   <main>
-    <section><div class="section-title"><h2>NYRA · Visual production</h2><span>ACTUAL BLENDER MODEL & RENDERS</span></div>
+    <section><div class="section-title"><h2>Old model / replacement candidates</h2><span>ACTUAL 3D GEOMETRY · SYNCHRONIZED VIEWS</span></div>
+      <p>Compare the preserved Phase 2 model with two independent local front/back reconstructions. Drag or zoom any panel to move all three cameras. These are review candidates; rigging and animation have not begun.</p>
+      <p><strong>Visual gate failed:</strong> both replacements have torso reconstruction defects. They are preserved for inspection, not approved as final NYRA assets.</p>
+      <div class="toolbar"><button data-comparison-view="front">Front</button><button data-comparison-view="rear">Rear</button><button data-comparison-view="side">Side</button><button data-comparison-view="three">Three-quarter</button><button data-comparison-view="face">Face</button><label><input id="compare-wire" type="checkbox"> Actual triangle wireframe</label></div>
+      <div id="comparison"></div>
+      <p><a href="../recovery/nyra/REPLACEMENT_REPORT.md">Candidate assessment and limitations</a> · <a href="../recovery/nyra/renders.html">Actual Blender proof gallery</a> · <a href="../recovery/nyra/index.html">Approved concept and derived references</a></p>
+    </section>
+    <section><div class="section-title"><h2>Phase 2 · Preserved checkpoint</h2><span>ACTUAL BLENDER MODEL & RENDERS</span></div>
       <p>Reshaped face and proportions, brown eyes, fitted eyebrows, cropped coral bomber, plum trackwear, sculpted hair and new sneaker details. Static visual model; final rigging remains pending.</p>
       <div class="render-pair"><figure><img src="../renders/phase2/04-three-quarter-front.png" alt="Actual NYRA full-body Blender render"><figcaption>NYRA · three-quarter front</figcaption></figure><figure><img src="../renders/phase2/06-face.png" alt="Actual NYRA face close-up from Blender"><figcaption>Face · revised anatomy and shading</figcaption></figure></div>
       <details><summary>All ten proof renders</summary><div class="proof-grid">
@@ -35,5 +42,6 @@
     <footer><a href="../ART_DIRECTION.md">Art direction</a><a href="../ASSET_RESEARCH.md">Asset research</a><a href="../ENVIRONMENT_AUDIT.md">Environment audit</a><a href="../ASSET_LICENSES.md">Licenses</a></footer>
   </main>
   <script type="module" src="viewer.js"></script>
+  <script type="module" src="comparison.js"></script>
 </body>
 </html>

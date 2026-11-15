@@ -1,0 +1,158 @@
+[pixal3d] --no-matte: using the image exactly as given
+[pixal3d] front + back: nyra-front.png + nyra-back.png
+[pixal3d] res=1024 seed=1337 gss=10.0 matted=True
+[pixal3d] steps=12
+[trellis] generating model with seed 1337
+[1/6] Pixal3D multiview: load /Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b.mvinput
+      V=2 views, mesh_scale=1.0000
+[trellis] warning: --pixal3d-weights mv with V=2. The multiview weights are validated at V=4; at V=1 they break down badly (85-0 against the single-view weights on 85 subjects).
+      flow weights: mv  (load 0.0s)
+[2/6] SS proj conditioning + flow
+[trellis] using MTL0 (12124 MB) [auto]
+      [cond] load dinov3 (0.1s)
+      [cond] cond_ss S=512 R=16 (host path) (0.7s)
+[trellis] using MTL0 (12124 MB) [auto]
+      [flow] [....................]  0/12    0.0s  starting    
+      [flow] [#...................]  1/12   17.4s  ~191s left  
+      [flow] [###.................]  2/12   36.0s  ~180s left  
+      [flow] [#####...............]  3/12   53.9s  ~162s left  
+      [flow] [######..............]  4/12   71.7s  ~143s left  
+      [flow] [########............]  5/12   89.1s  ~125s left  
+      [flow] [##########..........]  6/12  104.2s  ~104s left  
+      [flow] [###########.........]  7/12  116.6s  ~83s left   
+      [flow] [#############.......]  8/12  129.6s  ~65s left   
+      [flow] [###############.....]  9/12  144.4s  ~48s left   
+      [flow] [################....] 10/12  158.1s  ~32s left   
+      [flow] [##################..] 11/12  164.5s  ~15s left   
+      [flow] [####################] 12/12  170.9s  ~0s left    
+      [flow] 12 steps, 22 forwards, 170.9s
+      [cond] flow (load + runner + sampler) (172.0s)
+[trellis] using MTL0 (12124 MB) [auto]
+      [cond] ss_decode (load + decode + coords) (20.0s)
+      [cond] SS accounted (192.7s)
+      active voxels @res32 = 752  (192.7s)
+[3/6] shape SLAT flow (LR 512 -> upsample -> HR 1024 cascade, max_tok=49152)
+[trellis] using MTL0 (12124 MB) [auto]
+[trellis] using MTL0 (12124 MB) [auto]
+      [cond] load dinov3 + naf (0.1s)
+      [cond] cond_slat S=512 R=32 T=512 (device sparse) (6.1s)
+      [cond] noise (0.0s)
+[trellis] using MTL0 (12124 MB) [auto]
+      [flow] [....................]  0/12    0.0s  starting    
+      [flow] [#...................]  1/12    2.0s  ~22s left   
+      [flow] [###.................]  2/12    3.4s  ~17s left   
+      [flow] [#####...............]  3/12    4.8s  ~15s left   
+      [flow] [######..............]  4/12    6.4s  ~13s left   
+      [flow] [########............]  5/12    8.0s  ~11s left   
+      [flow] [##########..........]  6/12    9.5s  ~9s left    
+      [flow] [###########.........]  7/12   10.9s  ~8s left    
+      [flow] [#############.......]  8/12   12.4s  ~6s left    
+      [flow] [###############.....]  9/12   13.1s  ~4s left    
+      [flow] [################....] 10/12   13.9s  ~3s left    
+      [flow] [##################..] 11/12   14.7s  ~1s left    
+      [flow] [####################] 12/12   15.5s  ~0s left    
+      [flow] 12 steps, 20 forwards, 15.5s
+      [cond] flow (load + runner + sampler) (15.9s)
+      [stats] LR slat (res32, MV) n=24064 mean=0.0100 std=5.7081 min=-23.799 max=22.945 nan/inf=0
+      [cond] denorm + stats (0.0s)
+      [cond] LR shape SLAT accounted (22.1s)
+      LR shape SLAT (22.1s)
+[trellis] using MTL0 (12124 MB) [auto]
+      [cond] load shape_dec (0.2s)
+      [cond] shape_upsample (decoder stages, coords only) (2.2s)
+      upsampled coords @res512=317498 -> quantized @res1024 (grid 64, Pixal3D round/grid-1 formula) = 3386 tokens
+      [cond] quantize res512 -> grid (std::set) (0.0s)
+[trellis] using MTL0 (12124 MB) [auto]
+[trellis] using MTL0 (12124 MB) [auto]
+      [cond] load dinov3 + naf (0.1s)
+      [cond] cond_slat S=1024 R=grid T=512 (device sparse) (24.2s)
+      [cond] noise (0.0s)
+[trellis] using MTL0 (12124 MB) [auto]
+      [flow] [....................]  0/12    0.0s  starting    
+      [flow] [#...................]  1/12   12.7s  ~139s left  
+      [flow] [###.................]  2/12   24.1s  ~121s left  
+      [flow] [#####...............]  3/12   35.1s  ~105s left  
+      [flow] [######..............]  4/12   45.9s  ~92s left   
+      [flow] [########............]  5/12   56.8s  ~79s left   
+      [flow] [##########..........]  6/12   67.3s  ~67s left   
+      [flow] [###########.........]  7/12   77.9s  ~56s left   
+      [flow] [#############.......]  8/12   89.2s  ~45s left   
+      [flow] [###############.....]  9/12   94.6s  ~32s left   
+      [flow] [################....] 10/12  100.2s  ~20s left   
+      [flow] [##################..] 11/12  105.6s  ~10s left   
+      [flow] [####################] 12/12  111.2s  ~0s left    
+      [flow] 12 steps, 20 forwards, 111.2s
+      [cond] flow (load + runner + sampler) (111.5s)
+      [stats] HR slat (MV) n=108352 mean=0.0666 std=5.5738 min=-22.576 max=26.705 nan/inf=0
+      [shape] saved /Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b.shape.bin: N=3386 res=1024
+      [cond] denorm + stats (+ dump) (0.0s)
+      [cond] HR shape SLAT accounted (138.2s)
+      HR shape SLAT (138.2s)
+[4/6] FlexiDualGrid shape decode -> mesh @res1024
+[trellis] using MTL0 (12124 MB) [auto]
+      [cond] load shape_dec (0.3s)
+      [cond] shape_decode (decoder stages) (10.2s)
+      decoded voxels @res1024 = 1309695
+      [cond] dual_grid_to_mesh (0.1s)
+      mesh V=1309695 F=2727284
+      filled 1916 small holes -> V=1311611 F=2739022
+      [cond] fill_holes (0.4s)
+      [cond] shape decode accounted (11.1s)
+      shape decode (11.1s)
+[5/6] texture SLAT flow (HR 1024, NAF@1024) + PBR decode
+[trellis] using MTL0 (12124 MB) [auto]
+[trellis] using MTL0 (12124 MB) [auto]
+      [cond] load dinov3 + naf (0.1s)
+      [cond] cond_slat S=1024 R=grid T=1024 (device sparse) (28.8s)
+[trellis] using MTL0 (12124 MB) [auto]
+      [flow] [....................]  0/12    0.0s  starting    
+      [flow] [#...................]  1/12    5.3s  ~58s left   
+      [flow] [###.................]  2/12   10.5s  ~52s left   
+      [flow] [#####...............]  3/12   15.5s  ~47s left   
+      [flow] [######..............]  4/12   21.0s  ~42s left   
+      [flow] [########............]  5/12   26.3s  ~37s left   
+      [flow] [##########..........]  6/12   31.6s  ~32s left   
+      [flow] [###########.........]  7/12   37.0s  ~26s left   
+      [flow] [#############.......]  8/12   42.1s  ~21s left   
+      [flow] [###############.....]  9/12   47.4s  ~16s left   
+      [flow] [################....] 10/12   52.5s  ~11s left   
+      [flow] [##################..] 11/12   57.8s  ~5s left    
+      [flow] [####################] 12/12   63.1s  ~0s left    
+      [flow] 12 steps, 12 forwards, 63.1s
+      [cond] flow (load + runner + sampler + denorm) (63.4s)
+[trellis] using MTL0 (12124 MB) [auto]
+      [cond] load tex_dec (0.2s)
+      [cond] tex_decode (decoder stages) (9.5s)
+      PBR voxels=1309695 @res1024
+      [cond] pbr unpack (0.0s)
+      [cond] texture SLAT + decode accounted (102.0s)
+      texture SLAT + decode (102.0s)
+  weld: V 1311611->1307510 (4101 near-duplicates merged, eps=0.00012)
+  fill_holes: 2197 boundary loops filled (+9604 faces)
+  remesh_dc: 2746047 active voxels -> V=2155497 F=4345672 (eps=0.0009794, project_back=0.00)
+    [clean] faces=4345672, flipped 0 for consistent winding
+[6/6] cleaned dump -> /Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b.post.bin (V=2139091 F=4313868 remeshed, PBR=1309695 @res1024)
+done in 469.9s -> /Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b.post.bin
+      [dump] PIXAL3D_DUMP_CONTINUE=1: carrying on to write the model
+[6/6] write /Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b.glb
+      [post] weld + fill_small_holes (0.7s)
+      [post] bvh build (0.5s)
+  remesh_dc: 2746047 active voxels -> V=2155497 F=4345672 (eps=0.0009794, project_back=0.00)
+    [clean] faces=4345672, flipped 0 for consistent winding
+  remesh postproc: dropped 352 floater comps -> V=2139091 F=4313868
+      [post] remesh_dc + clean + drop_small_components (2.3s)
+  decimate_qem(target=1000000): V 2139091->483201, F 4313868->995828 (thresh=1.0e-07, 10 threads)
+  weld: V 483201->483037 (164 near-duplicates merged, eps=0.00012)
+  decimated postproc: dropped 9 more comps -> F=995454
+      [post] decimate + weld + fill + drop (4.3s)
+  uv_bake: 1 components (0 tiny, 0 faces -> strip S=0), 0 duplicate faces dropped
+  uv_bake: 12103 merge clusters
+  uv_bake: 3468 uncharted faces kept with point-collapsed UVs
+  uv_bake: atlas 4096x4096 (xatlas 1252x1252), Vo=793272 Fo=995454
+      [post] uv unwrap + PBR bake (21.1s)
+      textured GLB (atlas 4096, +/Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b_base.png)
+      [post] GLB + PNG write (3.5s)
+      [post] PLY write (0.0s)
+      postprocess total (32.5s)
+done in 502.3s -> /Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b.glb (+ /Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b.ply)
+[pixal3d] done in 503s -> /Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-b/nyra-b.glb (37.9 MB); manifest nyra-b.provenance.json

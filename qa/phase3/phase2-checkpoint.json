@@ -1,0 +1,13 @@
+{
+  "source/blender/nyra/nyra-visual.blend": "e53d75c03e82f12d807dfe82774ad9c31813721df07bf158875adafd925f5e26",
+  "renders/phase2/06-face.png": "fc5b09d0d1e08f126002a18cf00d4d0bfa37f3320c944b5d115dae974230b0e7",
+  "renders/phase2/09-metro-light.png": "066bfb45babfaef05fe8a14b009d70c147b4f49f9237d14aff6ec524d7de0881",
+  "renders/phase2/08-neutral-presentation.png": "285a18f74f5a8b92f75efd2e7ff699746505be1f82644c879988cc0b4572e0de",
+  "renders/phase2/03-rear.png": "e4580383f2bd8f398b2003eec05ac100e1a2c93d501a76d58e939479553a135f",
+  "renders/phase2/02-left-profile.png": "1f86d63c1871117644e5bc60a55735f290b9c79111cb6ffa1b0e8262f647af4d",
+  "renders/phase2/05-three-quarter-rear.png": "6205be159aa844558f94c17596ab7112c7f9b373229d8791fd28045769fd7f20",
+  "renders/phase2/01-front.png": "16a1f9f5f57ea415c2a6e4ea13bfced9e1bb1421c891b70f749a4a1bbda2cf60",
+  "renders/phase2/04-three-quarter-front.png": "493def6773de75d6a00eaffb6dc11fa454622307861e73cc5df5c071933982e6",
+  "renders/phase2/07-garment-detail.png": "64ed850882568669ea3ed9c5d9597f685cb4e14fd2371d20a57d5b37cf638720",
+  "renders/phase2/10-sneaker-detail.png": "62cef3b7bd728ce1f96d86e5787a23931650f7b8dc0e4fbb3427812adf85331f"
+}

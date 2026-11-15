@@ -1,0 +1,1100 @@
+{
+  "status": {
+    "name": "status",
+    "title": null,
+    "description": "Is the studio up, what is installed, and what is running now. Call this first.",
+    "input_schema": {
+      "properties": {},
+      "type": "object",
+      "title": "tool_statusArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "list_engines": {
+    "name": "list_engines",
+    "title": null,
+    "description": "Every engine (3D and picture), whether it is ready, its licence and download size.",
+    "input_schema": {
+      "properties": {},
+      "type": "object",
+      "title": "tool_list_enginesArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "list_moves": {
+    "name": "list_moves",
+    "title": null,
+    "description": "The animation moves a rigged character can be given (idle, walk, run, ...).",
+    "input_schema": {
+      "properties": {},
+      "type": "object",
+      "title": "tool_list_movesArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "options": {
+    "name": "options",
+    "title": null,
+    "description": "Every knob there is, as the studio shows them: the main ones on create and continue_asset, and\n        the Advanced ones (Pixel Match edge fade and nudge, texture size, rig from the raw model, move speed,\n        arms away from the body, ...) with what each does, its default and when to try it.",
+    "input_schema": {
+      "properties": {},
+      "type": "object",
+      "title": "tool_optionsArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "create": {
+    "name": "create",
+    "title": null,
+    "description": "Make something new, as the studio's Create does. Returns a run_id at once; the run takes minutes.\n\n        want: \"picture\" | \"prop\" (one game-ready object) | \"set\" (a 3x3 sheet cut into nine props) |\n              \"character\" (rigged and animated; humanoids).\n        Start from ONE of: description (an idea), image_path (a PNG/JPG on this machine) or model_path (a GLB).\n        stop_after: end early after a step: picture, back, model, finished, split, rigged or animated.\n        engine: a ready 3D engine id (default: the best ready one). front_and_back: also draw a back\n        picture for a fuller model (default: on when installed). move: first animation (see list_moves).\n        add_wording: append the studio's proven prompt wording (pose, background, ...) to a description.\n        finish_upload: also run Finish on an uploaded GLB.\n        finish_detail: \"light\" (10k triangles), \"game\" (20k, the default), \"more\" (40k), \"high\" (50k,\n            cleaner faces from the side; best for realistic humans), \"hero\" (32k body plus a sharper head\n            built again from a close crop; characters whose face matters, takes much longer), a count from\n        1000 to 200000, or \"full\" (Pixel Match on the raw model: its own mesh untouched, often ~1M\n        triangles; the sharpest look, for renders and stills, not games or rigging). pixel_match: paint the picture's real pixels on (default on).\n        advanced: the studio's Advanced knobs, e.g. {\"nudge\": false}. Call options to see them all.\n        picture_engine: who draws the picture from a description: \"flux\" (FLUX.2 klein, Apache-2.0, fast),\n            \"flux-light\" (the same model in smaller files: about 5 GB of memory instead of about 9, suggested\n            on machines with 16 GB or less) or \"qwen\" (Qwen-Image, Qwen Research License, follows long prompts\n            more closely). Default: the suggested installed one for this machine. A back picture prefers the\n            engine that drew the front.\n        back_image_path: your own back view to go with image_path (same pose, size and framing, seen from\n            directly behind). Pixal3D then builds from both and nothing is drawn. Needs Front + back installed.\n        ",
+    "input_schema": {
+      "properties": {
+        "want": {
+          "title": "Want",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "image_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Path"
+        },
+        "model_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Path"
+        },
+        "stop_after": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stop After"
+        },
+        "engine": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Engine"
+        },
+        "front_and_back": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Front And Back"
+        },
+        "move": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Move"
+        },
+        "add_wording": {
+          "default": true,
+          "title": "Add Wording",
+          "type": "boolean"
+        },
+        "finish_upload": {
+          "default": false,
+          "title": "Finish Upload",
+          "type": "boolean"
+        },
+        "finish_detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Finish Detail"
+        },
+        "pixel_match": {
+          "default": true,
+          "title": "Pixel Match",
+          "type": "boolean"
+        },
+        "advanced": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Advanced"
+        },
+        "picture_engine": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Picture Engine"
+        },
+        "back_image_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Back Image Path"
+        }
+      },
+      "required": [
+        "want"
+      ],
+      "type": "object",
+      "title": "tool_createArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "continue_asset": {
+    "name": "continue_asset",
+    "title": null,
+    "description": "Take an existing asset further: e.g. a picture to 3D, a model to rigged, or give an animated\n        character another move (up_to=\"animated\", move=...). up_to: the last step to run (default: all).\n        again=True makes the up_to step again as a new version (another 3D model, another Finish at a\n        different detail, a re-rig); the current one is kept. A new version has its own asset_id\n        (run_status gives it when the run is done): continue from that id to work on it, since the\n        family id is the original. finish_detail, pixel_match and advanced: as in create (options lists\n        every advanced knob). Back picture you don't like: up_to=\"back\", again=True, and optionally\n        back_change=\"what to change\" (say what you want to see), picture_engine=\"flux\"|\"flux-light\"|\"qwen\" (default: the\n        engine that drew the front); then make the model again from it.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "up_to": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Up To"
+        },
+        "want": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Want"
+        },
+        "move": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Move"
+        },
+        "engine": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Engine"
+        },
+        "again": {
+          "default": false,
+          "title": "Again",
+          "type": "boolean"
+        },
+        "finish_detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Finish Detail"
+        },
+        "pixel_match": {
+          "default": true,
+          "title": "Pixel Match",
+          "type": "boolean"
+        },
+        "advanced": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Advanced"
+        },
+        "back_change": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Back Change"
+        },
+        "picture_engine": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Picture Engine"
+        }
+      },
+      "required": [
+        "asset_id"
+      ],
+      "type": "object",
+      "title": "tool_continue_assetArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "run_status": {
+    "name": "run_status",
+    "title": null,
+    "description": "How a run is going. Waits up to wait_seconds (max 50) for the next step to finish, so call it\n        in a loop until status is done, error or cancelled. No run_id = the current or latest run.",
+    "input_schema": {
+      "properties": {
+        "run_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Run Id"
+        },
+        "wait_seconds": {
+          "default": 30,
+          "title": "Wait Seconds",
+          "type": "integer"
+        }
+      },
+      "type": "object",
+      "title": "tool_run_statusArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "cancel_run": {
+    "name": "cancel_run",
+    "title": null,
+    "description": "Stop a run. Steps already finished are kept.",
+    "input_schema": {
+      "properties": {
+        "run_id": {
+          "title": "Run Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id"
+      ],
+      "type": "object",
+      "title": "tool_cancel_runArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "list_assets": {
+    "name": "list_assets",
+    "title": null,
+    "description": "The Library, newest first: ids, names, how far each got, file paths, moves.\n        kind: picture | character | prop | \"prop set\" | model. search: words in the name or prompt.",
+    "input_schema": {
+      "properties": {
+        "search": {
+          "default": "",
+          "title": "Search",
+          "type": "string"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kind"
+        },
+        "limit": {
+          "default": 20,
+          "title": "Limit",
+          "type": "integer"
+        }
+      },
+      "type": "object",
+      "title": "tool_list_assetsArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "list_versions": {
+    "name": "list_versions",
+    "title": null,
+    "description": "Every version of one character or prop, oldest first: the same picture's 3D models,\n        Finishes and rigs, each with its files (the raw 3D model too). Any version's id works.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "asset_id"
+      ],
+      "type": "object",
+      "title": "tool_list_versionsArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "brush_back": {
+    "name": "brush_back",
+    "title": null,
+    "description": "Fix part of a character's back picture: mask_path is a PNG the size of the back (or any size; it is\n        scaled), white where to repaint, black elsewhere. change: what goes there (\"a dark red leather satchel\").\n        Only the white area is redrawn; the rest stays pixel for pixel. Paint close around the part:\n        everything inside is redrawn. Then make the 3D model again (continue_asset up_to='model', again=True).\n        picture_engine: \"flux\", \"flux-light\" or \"qwen\"; default the engine that drew the back.\n        which=\"front\" fixes the picture itself instead, only before a 3D model is made from it; the fixed\n        picture replaces the old one. Describe what should be there, not the change.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "mask_path": {
+          "title": "Mask Path",
+          "type": "string"
+        },
+        "change": {
+          "title": "Change",
+          "type": "string"
+        },
+        "picture_engine": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Picture Engine"
+        },
+        "which": {
+          "default": "back",
+          "title": "Which",
+          "type": "string"
+        }
+      },
+      "required": [
+        "asset_id",
+        "mask_path",
+        "change"
+      ],
+      "type": "object",
+      "title": "tool_brush_backArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "back_versions": {
+    "name": "back_versions",
+    "title": null,
+    "description": "Every kept version of a character's back picture (each redraw or brush keeps the one it\n        replaced), newest first, with how each was made. use=<file> makes one the back again (the one in\n        use is kept); delete=<file> removes one for good, so ask the user first. The back in use cannot\n        be deleted. After use, make the 3D model again for the change to show.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "use": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Use"
+        },
+        "delete": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Delete"
+        }
+      },
+      "required": [
+        "asset_id"
+      ],
+      "type": "object",
+      "title": "tool_back_versionsArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "picture_status": {
+    "name": "picture_status",
+    "title": null,
+    "description": "Status of a picture job started by brush_back; waits up to wait_seconds (max 50) for it to end.",
+    "input_schema": {
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "wait_seconds": {
+          "default": 30,
+          "title": "Wait Seconds",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "job_id"
+      ],
+      "type": "object",
+      "title": "tool_picture_statusArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "preview": {
+    "name": "preview",
+    "title": null,
+    "description": "A picture of an asset from the front, three-quarter, side and back, so you can SEE the result\n        and show it to the user. stage: latest | picture | model | finished | rigged. look: paint | clay\n        (clay = shape only, no colours). move: one of the asset's moves (see list_assets) to show four\n        moments of it instead. skin: a skin id (list_assets shows them) to show the model wearing it.\n        A few seconds with Blender installed, then cached.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "stage": {
+          "default": "latest",
+          "title": "Stage",
+          "type": "string"
+        },
+        "look": {
+          "default": "paint",
+          "title": "Look",
+          "type": "string"
+        },
+        "move": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Move"
+        },
+        "skin": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Skin"
+        }
+      },
+      "required": [
+        "asset_id"
+      ],
+      "type": "object",
+      "title": "tool_previewArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "make_skin": {
+    "name": "make_skin",
+    "title": null,
+    "description": "A new skin for a finished Pixal3D model: same shape, new paint. change says what to change\n        (\"make the skirt gold\", \"silver armour, red cloak\"); everything else is kept. Qwen redraws the model's\n        front picture first. Then: skin_status -> skin_picture (show the user) -> approve_skin_picture or\n        redo_skin_picture, front then back -> build_skin. The new skin fits the same rig and moves.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "change": {
+          "title": "Change",
+          "type": "string"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        }
+      },
+      "required": [
+        "asset_id",
+        "change"
+      ],
+      "type": "object",
+      "title": "tool_make_skinArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "skin_status": {
+    "name": "skin_status",
+    "title": null,
+    "description": "Where a skin is: its pictures, what is approved, and what to do next. Waits up to wait_seconds\n        (max 50) while a picture is drawing or the skin is building.",
+    "input_schema": {
+      "properties": {
+        "skin_id": {
+          "title": "Skin Id",
+          "type": "string"
+        },
+        "wait_seconds": {
+          "default": 30,
+          "title": "Wait Seconds",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "skin_id"
+      ],
+      "type": "object",
+      "title": "tool_skin_statusArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "skin_picture": {
+    "name": "skin_picture",
+    "title": null,
+    "description": "Show a skin's picture (the newest try for side front|back, or try `number`). Always show the user\n        before approving: Qwen sometimes changes more than asked (an extra strap, spottier fur).",
+    "input_schema": {
+      "properties": {
+        "skin_id": {
+          "title": "Skin Id",
+          "type": "string"
+        },
+        "side": {
+          "default": "front",
+          "title": "Side",
+          "type": "string"
+        },
+        "number": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Number"
+        }
+      },
+      "required": [
+        "skin_id"
+      ],
+      "type": "object",
+      "title": "tool_skin_pictureArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "approve_skin_picture": {
+    "name": "approve_skin_picture",
+    "title": null,
+    "description": "The user likes this picture (the newest try, or try `number`). Approving the front starts the\n        back picture at once when the model has one.",
+    "input_schema": {
+      "properties": {
+        "skin_id": {
+          "title": "Skin Id",
+          "type": "string"
+        },
+        "side": {
+          "default": "front",
+          "title": "Side",
+          "type": "string"
+        },
+        "number": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Number"
+        }
+      },
+      "required": [
+        "skin_id"
+      ],
+      "type": "object",
+      "title": "tool_approve_skin_pictureArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "redo_skin_picture": {
+    "name": "redo_skin_picture",
+    "title": null,
+    "description": "Draw the picture again, with the user's correction in change (e.g. \"gold skirt, but keep the\n        belt blue\"); without change it simply tries again.",
+    "input_schema": {
+      "properties": {
+        "skin_id": {
+          "title": "Skin Id",
+          "type": "string"
+        },
+        "side": {
+          "default": "front",
+          "title": "Side",
+          "type": "string"
+        },
+        "change": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Change"
+        }
+      },
+      "required": [
+        "skin_id"
+      ],
+      "type": "object",
+      "title": "tool_redo_skin_pictureArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "build_skin": {
+    "name": "build_skin",
+    "title": null,
+    "description": "Both pictures approved: repaint the model from them and Finish it with the model's own settings\n        (a few minutes). Then skin_status until done.",
+    "input_schema": {
+      "properties": {
+        "skin_id": {
+          "title": "Skin Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "skin_id"
+      ],
+      "type": "object",
+      "title": "tool_build_skinArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "export_skins": {
+    "name": "export_skins",
+    "title": null,
+    "description": "Skins as files for a game. With skin_id: the finished model, its rig and every move, all\n        wearing that skin. Without: one GLB holding the original paint and every skin as switchable\n        material variants.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "skin_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Skin Id"
+        }
+      },
+      "required": [
+        "asset_id"
+      ],
+      "type": "object",
+      "title": "tool_export_skinsArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "cancel_skin": {
+    "name": "cancel_skin",
+    "title": null,
+    "description": "Stop a skin that is building. Its approved pictures are kept, so build_skin can start it again.",
+    "input_schema": {
+      "properties": {
+        "skin_id": {
+          "title": "Skin Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "skin_id"
+      ],
+      "type": "object",
+      "title": "tool_cancel_skinArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "open_in_studio": {
+    "name": "open_in_studio",
+    "title": null,
+    "description": "Open the studio in the user's browser, on this asset, so they can spin it, play its moves and\n        download it. Without an asset_id it opens the studio's front page.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asset Id"
+        }
+      },
+      "type": "object",
+      "title": "tool_open_in_studioArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "model_info": {
+    "name": "model_info",
+    "title": null,
+    "description": "A model's numbers and where its file is: triangles, vertices, textures (with sizes), materials,\n        bones, moves and file size, plus the full path on this machine. stage: latest | model | finished |\n        rigged (picture gives the path but no counts).",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "stage": {
+          "default": "latest",
+          "title": "Stage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "asset_id"
+      ],
+      "type": "object",
+      "title": "tool_model_infoArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "blender_helpers": {
+    "name": "blender_helpers",
+    "title": null,
+    "description": "Blender helper scripts in this repo, for you to run yourself when the user wants work done in Blender:\n        stage, light and render a model, fix normals, bake, remesh, split props, rig and animate. Each one says what\n        it does and how to run it: live (in the user's open Blender), headless (its own background Blender) or\n        internal (don't run it).",
+    "input_schema": {
+      "properties": {},
+      "type": "object",
+      "title": "tool_blender_helpersArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "show_in_folder": {
+    "name": "show_in_folder",
+    "title": null,
+    "description": "Open the folder holding an asset's file in Finder / Explorer, with the file selected, for a user\n        who wants the file itself. stage: latest | picture | model | finished | rigged.",
+    "input_schema": {
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "stage": {
+          "default": "latest",
+          "title": "Stage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "asset_id"
+      ],
+      "type": "object",
+      "title": "tool_show_in_folderArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "report_bug": {
+    "name": "report_bug",
+    "title": null,
+    "description": "Draft a bug report for the AssetFurnace team: the user's words plus the version, machine and the\n        last failed step's log (home folder hidden). Sends NOTHING: it returns the report and links for the\n        USER to send it themselves. include_prompt: add the failed run's prompt (ask the user first).",
+    "input_schema": {
+      "properties": {
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "include_prompt": {
+          "default": false,
+          "title": "Include Prompt",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "message"
+      ],
+      "type": "object",
+      "title": "tool_report_bugArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "usage_counts": {
+    "name": "usage_counts",
+    "title": null,
+    "description": "Anonymous usage counts: whether they are shared and the exact daily message. When status shows\n        usage_counts.ask_user, ask the USER that question; pass user_said_yes=true only if they said yes.\n        Agents can't turn sharing on or off: only the user can, on the studio's About page.",
+    "input_schema": {
+      "properties": {
+        "user_said_yes": {
+          "default": false,
+          "title": "User Said Yes",
+          "type": "boolean"
+        }
+      },
+      "type": "object",
+      "title": "tool_usage_countsArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  "install_backend": {
+    "name": "install_backend",
+    "title": null,
+    "description": "Set up an engine. Without confirm it only reports what would be downloaded, the size and the\n        licence; tell the user and get a clear yes before calling again with confirm=true.",
+    "input_schema": {
+      "properties": {
+        "backend_id": {
+          "title": "Backend Id",
+          "type": "string"
+        },
+        "confirm": {
+          "default": false,
+          "title": "Confirm",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "backend_id"
+      ],
+      "type": "object",
+      "title": "tool_install_backendArguments"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  }
+}

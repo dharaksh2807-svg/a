@@ -1,0 +1,16 @@
+23:30:31 | INFO: Data are loaded, start creating Blender stuff
+23:30:31 | INFO: Blender create Mesh node 0
+23:30:32 | INFO: glTF import finished in 0.88s
+/Users/dharaksh/Desktop/a/scripts/render_replacement.py:25: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Neutral studio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.12,.14,.19,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.35
+/Users/dharaksh/Desktop/a/scripts/render_replacement.py:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*color,1);bs.inputs['Roughness'].default_value=roughness;return m
+00:23.976  render           | Saved: '/Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-a/renders/pixel-match/front.png'
+00:43.045  render           | Saved: '/Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-a/renders/pixel-match/rear.png'
+01:04.871  render           | Saved: '/Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-a/renders/pixel-match/face.png'
+Info: No new files have been packed
+Info: Saved as "nyra-review.blend"
+VERDICT: PASS — saved imported source, real geometry renders and measured statistics
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

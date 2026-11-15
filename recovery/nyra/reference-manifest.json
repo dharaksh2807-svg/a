@@ -1,0 +1,43 @@
+{
+  "authority": "approved-concept.png",
+  "method": "built-in imagegen, identity-preserving derivations",
+  "status": "awaiting reference review; no 3D generation",
+  "references": [
+    {
+      "file": "reference-set/01-front-a-pose.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1472541,
+      "sha256": "3344a43933b12fdca86031a0261e711533240ccfdf28cb91f17fd3943630004a",
+      "type": "derived 2D reference",
+      "approved": false
+    },
+    {
+      "file": "reference-set/02-rear-a-pose.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1446096,
+      "sha256": "ce618cb30116f1947e1cb33506dafd93905673918b5b7f0acb67705f55054aff",
+      "type": "derived 2D reference",
+      "approved": false
+    },
+    {
+      "file": "reference-set/03-left-profile.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1302449,
+      "sha256": "3a5bf5af6af9573b75956f5180023e748993c3dea79b435ff84975e2bb8492f9",
+      "type": "derived 2D reference",
+      "approved": false
+    },
+    {
+      "file": "reference-set/04-face-front.png",
+      "width": 1199,
+      "height": 1312,
+      "bytes": 2244495,
+      "sha256": "4315ab53fa6aedcc02e0a5ccf40c2506bf1e45c8e64f1730b3bb88c1a23a68f0",
+      "type": "derived 2D reference",
+      "approved": false
+    }
+  ]
+}

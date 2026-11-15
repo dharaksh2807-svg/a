@@ -1,0 +1,40 @@
+{
+  "artifact_validation": "PASS",
+  "visual_quality": "FAIL",
+  "accepted_candidate": null,
+  "retained_default_textures": {
+    "a": "original",
+    "b": "original"
+  },
+  "render_count": 24,
+  "render_files": [
+    "recovery/nyra/candidates/candidate-a/renders/original/front.png",
+    "recovery/nyra/candidates/candidate-a/renders/original/three-quarter.png",
+    "recovery/nyra/candidates/candidate-a/renders/original/side.png",
+    "recovery/nyra/candidates/candidate-a/renders/original/rear.png",
+    "recovery/nyra/candidates/candidate-a/renders/original/face.png",
+    "recovery/nyra/candidates/candidate-a/renders/original/clay.png",
+    "recovery/nyra/candidates/candidate-a/renders/original/wireframe.png",
+    "recovery/nyra/candidates/candidate-a/renders/original/wireframe-face.png",
+    "recovery/nyra/candidates/candidate-a/renders/original/gameplay.png",
+    "recovery/nyra/candidates/candidate-a/renders/pixel-match/front.png",
+    "recovery/nyra/candidates/candidate-a/renders/pixel-match/rear.png",
+    "recovery/nyra/candidates/candidate-a/renders/pixel-match/face.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/front.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/three-quarter.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/side.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/rear.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/face.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/clay.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/wireframe.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/wireframe-face.png",
+    "recovery/nyra/candidates/candidate-b/renders/original/gameplay.png",
+    "recovery/nyra/candidates/candidate-b/renders/pixel-match/front.png",
+    "recovery/nyra/candidates/candidate-b/renders/pixel-match/rear.png",
+    "recovery/nyra/candidates/candidate-b/renders/pixel-match/face.png"
+  ],
+  "glb_validation": "4/4 valid, zero errors and warnings",
+  "viewer": "Three models and both texture selectors tested; front/rear/side/face and wireframe observed; no console errors",
+  "rigging_started": false,
+  "paid_services_used": false
+}

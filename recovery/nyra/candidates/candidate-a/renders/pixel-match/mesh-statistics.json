@@ -1,0 +1,28 @@
+{
+  "source": "/Users/dharaksh/Desktop/a/recovery/nyra/candidates/candidate-a/nyra-a-pixel-match.glb",
+  "presentation_height_m": 1.78,
+  "meshes": 1,
+  "vertices": 724640,
+  "polygons": 958378,
+  "triangles": 958378,
+  "uv_layers": {
+    "Mesh_0": 1
+  },
+  "materials": [
+    "Material_0"
+  ],
+  "images": [
+    {
+      "name": "Image_0",
+      "width": 4096,
+      "height": 4096
+    },
+    {
+      "name": "Image_1",
+      "width": 4096,
+      "height": 4096
+    }
+  ],
+  "rigged": false,
+  "geometry_edits": "None; presentation parent transform and smooth shading only."
+}

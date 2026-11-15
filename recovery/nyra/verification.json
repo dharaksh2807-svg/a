@@ -1,0 +1,27 @@
+{
+  "checkpoint_hashes_unchanged": true,
+  "reference_count": 4,
+  "references_saved_in_workspace": true,
+  "prompts_saved": true,
+  "three_d_generation_executed": false,
+  "rigging_executed": false,
+  "image_dimensions": [
+    [
+      1024,
+      1536
+    ],
+    [
+      1024,
+      1536
+    ],
+    [
+      1024,
+      1536
+    ],
+    [
+      1199,
+      1312
+    ]
+  ],
+  "visual_qa": "Palette, garment categories, mature direction and full-body framing inspected. Cross-view inferred-detail limits documented."
+}
