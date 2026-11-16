@@ -1,0 +1,28 @@
+{
+  "abdomen_vertices": 7228,
+  "fit_coefficients": [
+    -0.13048805320050144,
+    4.51695207779068,
+    -0.02197830623221824,
+    -0.0021733870119886424,
+    0.012678539557913005,
+    -1.3906210212756227
+  ],
+  "anchor_vertices": 632,
+  "abdomen_roi": {
+    "z": [
+      1.203,
+      1.284
+    ],
+    "abs_x_max": 0.126,
+    "front_y_max": -0.065
+  },
+  "welded_vertices": 472895,
+  "relaxed_vertices": 252264,
+  "notes": [
+    "No new body or hairstyle generated",
+    "Original UV atlas remains packed",
+    "Localized surface field bridges entire shelf",
+    "Welded coincident vertices for continuous shading"
+  ]
+}

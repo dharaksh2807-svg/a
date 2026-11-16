@@ -1,0 +1,26 @@
+[
+  {
+    "path": "recovery/nyra/candidates/candidate-a/nyra-a.glb",
+    "git_blob": "2dfeba61393f0255b84c2ab07bba9119b7738efc",
+    "unchanged_from_checkpoint": true,
+    "sha256": "862f8105ecb861efc3d959dc81762c4fc6c5ee0016052795bb42d262d60c0f5d"
+  },
+  {
+    "path": "recovery/nyra/candidates/candidate-a/renders/original/nyra-review.blend",
+    "git_blob": "b5419ecc5b5cc3dd8516170ed50fdfc0ee3a3e94",
+    "unchanged_from_checkpoint": true,
+    "sha256": "f14150d876a8ea595316f65db7ab7fe8c090b1b3c27440ceeec99fbc7e11393a"
+  },
+  {
+    "path": "recovery/nyra/restoration/checkpoint-1/nyra-restoration-checkpoint1.blend",
+    "git_blob": "e5d0336ba9c1d4085df140a5a85ef6e29ca8646c",
+    "unchanged_from_checkpoint": true,
+    "sha256": "6e262afb28d92cbbe4eb0a76b314f50da8b3094348a3d385314092b2733ba17a"
+  },
+  {
+    "path": "recovery/nyra/reconstruction/NYRA_Candidate_A_Reconstructed.blend",
+    "git_blob": "7b8d6ad962a0e3f34bf52b40a9da3d705fd5a747",
+    "unchanged_from_checkpoint": true,
+    "sha256": "ff3b6af5f6ed8139c1767ecf0e905ff5fbaa1ec368bb02af28677b8ce571f757"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "master_reopens": true,
+    "finite_vertices": true,
+    "navel_and_belt_original_positions_preserved": true,
+    "packed_used_images": true,
+    "no_armatures": true,
+    "no_external_libraries": true,
+    "glb_has_no_cameras_lights_or_rig": true,
+    "glb_reimports": true,
+    "glb_has_no_studio_floor": true
+  },
+  "vertex_count": 473970,
+  "polygons": 956866,
+  "protected_original_vertices": 11234,
+  "maximum_nearest_position_error_m": 3.6089201671529736e-07,
+  "materials": [
+    "Material_0",
+    "NYRA recovery / skin",
+    "NYRA recovery / hair",
+    "NYRA recovery / fabric",
+    "NYRA recovery / rubber",
+    "NYRA recovery / abdominal donor skin"
+  ],
+  "glb_meshes": [
+    "Mesh_0"
+  ],
+  "glb_material_count": 5,
+  "blender": "5.2.3 LTS",
+  "sha256": {
+    "NYRA-Final-Recovery.blend": "2deaf00444e4dd14af3a42a3776aa7986767d7d91556215ed22a4bb50095a817",
+    "NYRA-Final-Recovery.glb": "bf54fd30e11500043ca8b67aca49d9ba78059d476f78b65e477f679a31017896"
+  },
+  "technical_pass": true,
+  "artistic_quality": "Requires independent visual approval; technical pass is not visual approval."
+}

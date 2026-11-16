@@ -1,0 +1,121 @@
+{
+  "objects": [
+    [
+      "Cool frontal fill",
+      "LIGHT"
+    ],
+    [
+      "Large warm key",
+      "LIGHT"
+    ],
+    [
+      "Mesh_0",
+      "MESH"
+    ],
+    [
+      "NYRA | presentation transform only",
+      "EMPTY"
+    ],
+    [
+      "Rear separation",
+      "LIGHT"
+    ],
+    [
+      "Review camera",
+      "CAMERA"
+    ],
+    [
+      "Studio floor",
+      "MESH"
+    ]
+  ],
+  "vertices": 724640,
+  "faces": 958378,
+  "bounds": [
+    [
+      -0.3581148087978363,
+      -0.24224333465099335,
+      0.0
+    ],
+    [
+      0.3581147789955139,
+      0.24224334955215454,
+      1.7799999713897705
+    ]
+  ],
+  "images": [
+    [
+      "Image_0",
+      [
+        4096,
+        4096
+      ]
+    ],
+    [
+      "Image_1",
+      [
+        4096,
+        4096
+      ]
+    ]
+  ],
+  "materials": [
+    {
+      "name": "Material_0",
+      "nodes": [
+        [
+          "Principled BSDF",
+          "BSDF_PRINCIPLED"
+        ],
+        [
+          "Material Output",
+          "OUTPUT_MATERIAL"
+        ],
+        [
+          "Image Texture",
+          "TEX_IMAGE"
+        ],
+        [
+          "Separate Color",
+          "SEPARATE_COLOR"
+        ],
+        [
+          "Image Texture.001",
+          "TEX_IMAGE"
+        ]
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ]
+      ]
+    }
+  ]
+}

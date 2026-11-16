@@ -1,0 +1,13 @@
+{
+  "facial_reference": "recovery/nyra/inputs/nyra-face.png",
+  "authority_note": "Existing derived facial guide; approved-concept.png remains design authority. No new reference generated.",
+  "limitations": [
+    "Facial paint is a projection onto original geometry, not new eye anatomy",
+    "No claim of recovered native high-frequency skin or hair detail"
+  ],
+  "atlas_texels_edited": 599006,
+  "atlas_triangles_processed": 74143,
+  "shoe_vertices_edited_in_final_texture_only_invocation": 0,
+  "outsole_groove_applied_in_prior_geometry_invocation": true,
+  "hair_projection_rejected_and_removed": true
+}

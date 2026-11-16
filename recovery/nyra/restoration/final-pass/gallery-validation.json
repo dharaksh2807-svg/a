@@ -1,0 +1,119 @@
+{
+  "checks": {
+    "front": true,
+    "rear": true,
+    "side": true,
+    "three-quarter": true,
+    "face": true,
+    "abdomen": true,
+    "clay": true,
+    "gameplay": true,
+    "abdomen-oblique": true,
+    "abdomen-clay": true,
+    "footwear": true,
+    "identical_camera_manifests": true
+  },
+  "render_pairs": [
+    {
+      "view": "front",
+      "dimensions": [
+        1000,
+        1300
+      ],
+      "before_sha256": "69457bf65464beb0196daddd449ea9ead6bf7e357cb6b04dc95a94d858bf2cb8",
+      "after_sha256": "5066b04d5c00ae9ba269385d8e12c5ed9189d515378bb819cf581b1ca3b59c93"
+    },
+    {
+      "view": "rear",
+      "dimensions": [
+        1000,
+        1300
+      ],
+      "before_sha256": "143791c1e26b2144e6e3a1325b600c7582da1f7f9de30bf113d21a244d43e859",
+      "after_sha256": "bc6ecfca44ca1b93ba32cdc1b6f892b60133989bdec51a2170b9517d35921a70"
+    },
+    {
+      "view": "side",
+      "dimensions": [
+        1000,
+        1300
+      ],
+      "before_sha256": "4454bd801d3602febd178e3bb59b137aabc47001edcead11e295db2ab6423315",
+      "after_sha256": "241ca39bc481688dd46b8067934eeac68f05549acee7633458044939f35537c4"
+    },
+    {
+      "view": "three-quarter",
+      "dimensions": [
+        1000,
+        1300
+      ],
+      "before_sha256": "441157e6b003955906ff463ff772ef9b92a82c32a42bae91a08de6b69aad6947",
+      "after_sha256": "8c637a50164f25299baa6cefbef9479c50513eb959751ca014c7f21bd752af07"
+    },
+    {
+      "view": "face",
+      "dimensions": [
+        1000,
+        1200
+      ],
+      "before_sha256": "f8190a1ff1e23d8da391f4e4baa6d64dc247af64164d4591107b0c5ee0f1c572",
+      "after_sha256": "defe87e2de6d18902e656eded13b8985e7744847ce8dcbd0da68ff8ce112e8f3"
+    },
+    {
+      "view": "abdomen",
+      "dimensions": [
+        1100,
+        900
+      ],
+      "before_sha256": "1f8275e765e1c7bf7d15aa4df52315661aa50e0c877e2d9618c9ed37d4461453",
+      "after_sha256": "53ff9cc3480ff68346f5dbb61e42e3793c4636a024090c43b618ace16b68d6b0"
+    },
+    {
+      "view": "clay",
+      "dimensions": [
+        1000,
+        1300
+      ],
+      "before_sha256": "4a71b2852002f268de3a6070041c04d3c9f46526331f39527b9fdf09858f9e6b",
+      "after_sha256": "d60c1bf19473fb87eb7b544441ba3522a940ffcd6021cac8290b0aa6183b824c"
+    },
+    {
+      "view": "gameplay",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "before_sha256": "21186af2d64e6d8b5ef9428e9dd64aba3cf9b5893aeedbf4670cf7168f89d52c",
+      "after_sha256": "06be2eeb9b2e4fcd16e35ff752329bb1acae045527f61a00b3f34df3ed48bddb"
+    },
+    {
+      "view": "abdomen-oblique",
+      "dimensions": [
+        1100,
+        900
+      ],
+      "before_sha256": "de23277118010acac2d012fa115e218ea6afa2ab1409ff08b8abc326e1fb5300",
+      "after_sha256": "6b9e9a0bc08762a02c3183aac8724e7bdc3bbbfdb5491d55c1330f1d7946c0fd"
+    },
+    {
+      "view": "abdomen-clay",
+      "dimensions": [
+        1100,
+        900
+      ],
+      "before_sha256": "8247bd420de158740a1e325d8f3d019abb7b23a22e2957eb142da0f1abb39fb9",
+      "after_sha256": "7937d3a7f7006a5a18aaa14888520c17f8fd6f10ab090cf7ff9dc24975237016"
+    },
+    {
+      "view": "footwear",
+      "dimensions": [
+        1100,
+        800
+      ],
+      "before_sha256": "c30b2955d2a16a8f551c1ec44fcf7a74229a6c9863ebc888e77134f61368a11c",
+      "after_sha256": "83dbfeb6d316fb0483f75bea00dc3714bd6ac3b17962ab7dca1fcbfc152715d2"
+    }
+  ],
+  "pass": true,
+  "scope": "Image availability, dimensions and camera equality; not artistic approval."
+}

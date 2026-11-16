@@ -1,0 +1,40 @@
+{
+  "planning": "deep",
+  "context_depth": "dependency",
+  "verification_depth": "impact",
+  "delegation": "none",
+  "reason_codes": [
+    "final-authorized-visual-recovery",
+    "fragmented-source-surface",
+    "identity-preservation"
+  ],
+  "source": "recovery/nyra/candidates/candidate-a/renders/original/nyra-review.blend",
+  "allowed_write_scope": [
+    "recovery/nyra/restoration/final-pass/**"
+  ],
+  "preserve": [
+    "all previous checkpoints",
+    "original proportions",
+    "ponytail silhouette",
+    "navel",
+    "belt",
+    "outfit design"
+  ],
+  "exclude": [
+    "new candidate inference",
+    "full character reconstruction",
+    "rigging",
+    "game integration"
+  ],
+  "validation": [
+    "actual matched Blender renders in eight requested views",
+    "cross-section evidence for abdominal surface",
+    "reopen editable master",
+    "reimport GLB",
+    "visual inspection with honest limitations"
+  ],
+  "approval": "stop for independent visual approval after delivery",
+  "final_status": "delivered_failed_visual_attempt",
+  "artistic_acceptance": "FAIL \u2014 new abdominal repair artifacts and unresolved face/hair/footwear defects",
+  "next_step": "Independent visual review; no rigging or integration"
+}
