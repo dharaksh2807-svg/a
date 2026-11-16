@@ -1,0 +1,28 @@
+{
+  "task": "NYRA Phase 2.1 \u2014 Non-Destructive Visual Restoration",
+  "checkpoint": 1,
+  "target": "Abnormal horizontal abdominal ridge removal & smooth natural contour restoration",
+  "source_model": "recovery/nyra/candidates/candidate-a/nyra-a.glb",
+  "source_blend": "recovery/nyra/candidates/candidate-a/renders/original/nyra-review.blend",
+  "restored_blend": "recovery/nyra/restoration/checkpoint-1/nyra-restoration-checkpoint1.blend",
+  "restored_glb": "recovery/nyra/restoration/checkpoint-1/nyra-a-restored.glb",
+  "total_vertices": 724640,
+  "modified_vertices": 8770,
+  "modification_percentage": "1.21%",
+  "max_protrusion_removed_mm": 18.22,
+  "mean_shift_mm": 2.62,
+  "max_displacement_outside_roi_mm": 0.0,
+  "dark_texels_corrected": 8870,
+  "renders": [
+    "after_abdomen_clay_closeup.png",
+    "after_abdomen_closeup.png",
+    "after_clay.png",
+    "after_front.png",
+    "after_three-quarter.png",
+    "before_abdomen_clay_closeup.png",
+    "before_abdomen_closeup.png",
+    "before_clay.png",
+    "before_front.png",
+    "before_three-quarter.png"
+  ]
+}
