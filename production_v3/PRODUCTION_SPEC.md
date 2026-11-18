@@ -223,7 +223,7 @@ To maintain minimal draw call overhead in WebGL, the character must use **no mor
 
 Before any candidate foundation is cleared for Phase 2 implementation, it must pass the following binary quality gates:
 
-1. **Facial Identity Gate:** The face must possess the mature, attractive, almond-eyed identity of the approved portrait (`references/turnarounds/nyra_portrait_face.png`). Models with juvenile, cartoon, or hyper-stylized facial features are disqualified.
+1. **Facial Identity Gate:** The face must possess the mature, attractive, almond-eyed identity of the approved portrait (`references/turnarounds/nyra_portrait_face.jpg`). Models with juvenile, cartoon, or hyper-stylized facial features are disqualified.
 2. **Abdominal Topology Gate:** The abdominal wall between underbust and waist must be clean, smooth, and anatomically coherent without shelf artifacts or collapsed polygons.
 3. **Apparel Completeness Gate:** The outfit must match the off-shoulder cropped jacket, sports bra, high-waisted chevron leggings, and chunky sneaker combination.
 4. **License Compliance Gate:** Must possess an unambiguous commercial license that permits serving the 3D asset in a browser-based Three.js WebGL game without violating third-party extraction clauses (see `production_v3/research/LICENSE_RISK_MATRIX.md`).
